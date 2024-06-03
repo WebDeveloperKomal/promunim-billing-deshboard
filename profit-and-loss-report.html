@@ -4,21 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
     <title>Dashboard - Promunim</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
-
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -27,11 +23,9 @@
     <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
-
     <!-- Template Main CSS File -->
     <link href="profit-and-loss-report.css" rel="stylesheet">
 </head>
-
 
 <body>
     <!-- ======= Sidebar ======= -->
@@ -49,17 +43,21 @@
             </div>
 
             <div class="img-img-line">
-                <img src="assets/img/icon8.png">
+                <img src="assets/img/Vector (3).png">
             </div>
 
             <button class="dropbtn">
                 <p>Create Sales Invoice</p>
             </button>
             <!-- <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div> -->
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<a href="#">Link 3</a>
+</div> -->
+        </div>
+
+        <div class="img-img1">
+            <img src="assets/img/Exclude.png" alt="">
         </div>
 
         <div class="para">
@@ -103,6 +101,7 @@
                         <a href="#">
                             <img src="assets/img/home.png" alt="">&nbsp;&nbsp;<span>Godown (Warehouse)</span>
                         </a>
+                    </li>
                 </ul>
             </li>
             <!-- End Components Nav -->
@@ -250,7 +249,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
                     <img class="img-class7" src="assets/img/line5.png">
-                    <span class="staff">Staff Attendance & Payroll
+                    <span class="staff">Staff Attendance & Pay
                     </span>
                 </a>
             </li>
@@ -309,10 +308,11 @@
     </aside>
     <!-- End Sidebar-->
 
+
+    <!-- main section -->
     <main id="main" class="main">
         <div class="pagetitle">
             <h1><i class="bi bi-chevron-left"></i>&nbsp;Profit And Loss Report</h1>
-
             <button type="button" class="btn btn-light btn-margin-top"><i
                     class="bi bi-star-fill"></i>&nbsp;&nbsp;&nbsp;Favourite
             </button>
@@ -320,31 +320,26 @@
         </div>
         <!-- End Page Title -->
 
-
         <section class="section dashboard">
             <div class="row">
                 <!-- Left side columns -->
                 <div class="col-lg-12">
                     <div class="row">
-
-
                         <div class="second-btn3">
-                            <button type="button" class="btn-second3">Print Pdf</button>
+                            <button type="button" class="btn-second3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print
+                                Pdf</button>
                             <img src="assets/img/print.png">
                         </div>
-
                         <div class="second-btn2">
                             <button type="button" class="btn-second2">Download Excel</button>
                             <img src="assets/img/table-icon 1.png">
                         </div>
-
 
                         <!-- Recent Sales -->
                         <div class="col-12" id="b1">
                             <div class="card recent-sales overflow-auto">
                                 <div class="card-box-table">
                                     <table class="table table-bordered">
-
                                         <tbody>
                                             <tr>
                                                 <td style="width: 60%;">PARTICULARS</td>
@@ -437,30 +432,6 @@
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <script>
-        function showInputField() {
-            var checkBox = document.getElementById("flexCheckDefault");
-            var inputFieldGroup = document.getElementById("inputFieldGroup");
-
-            if (checkBox.checked == true) {
-                inputFieldGroup.style.display = "block";
-            } else {
-                inputFieldGroup.style.display = "none";
-            }
-        }
-    </script>
-
-    <script>
-        // JavaScript to handle toggles
-        document.getElementById('toggleFirst').addEventListener('change', function () {
-            var firstToggleContent = document.getElementById('firstToggleContent');
-            if (this.checked) {
-                firstToggleContent.style.display = 'block';
-            } else {
-                firstToggleContent.style.display = 'none';
-            }
-        });
-    </script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 </body>

@@ -37,10 +37,10 @@ h6 {
     padding: 20px 5px;
     transition: all 0.3s;
     margin-left: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(0, 76, 140, 0.17);
-    height: 1320px;
-    width: 76%;
+    height: 1300px;
+    width: 81%;
     margin-left: 86px;
     /* background-color: #004C8C; */
 }
@@ -50,7 +50,6 @@ h6 {
         padding: 20px;
     }
 }
-
 
 /*--------------------------------------------------------------
 # Page Title
@@ -65,9 +64,8 @@ h6 {
     font-weight: 600;
     color: #004C8C;
     font-family: 'Comfortaa';
-    margin-left: 10px;
+    margin-left: 5px;
 }
-
 
 /*--------------------------------------------------------------
 # Override some default Bootstrap stylings
@@ -81,13 +79,12 @@ h6 {
     animation-fill-mode: both;
     border: 0;
     box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
-
 }
 
 .dropdown-menu .dropdown-header,
 .dropdown-menu .dropdown-footer {
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     padding: 10px 25px;
 }
 
@@ -107,13 +104,13 @@ h6 {
 
 .dropdown-menu .dropdown-item {
     font-size: 12px;
-    padding: 10px 15px;
+    padding: 5px 15px;
     transition: 0.3s;
 }
 
 .dropdown-menu .dropdown-item i {
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 0;
 }
 
@@ -195,8 +192,6 @@ h6 {
     padding: 15px;
 }
 
-
-
 .card-body {
     padding: 0 20px 20px 20px;
 }
@@ -204,7 +199,6 @@ h6 {
 .card-img-overlay {
     background-color: rgba(255, 255, 255, 0.6);
 }
-
 
 /* Close Button */
 .btn-close {
@@ -232,8 +226,9 @@ h6 {
 }
 
 .logo img {
-    max-height: 42px;
+    max-height: 47px;
     margin-right: 6px;
+    margin-left: -7px;
 }
 
 .logo span {
@@ -247,9 +242,9 @@ h6 {
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
-.main {
+/* .main {
     margin-left: -8px;
-}
+} */
 
 .hero {
     margin-top: 10px;
@@ -260,16 +255,18 @@ h6 {
     top: 11px;
     left: 0;
     bottom: 0;
-    width: 298px;
+    width: 238px;
+    /* height: 1006px; */
     z-index: 996;
     transition: all 0.3s;
     padding: 20px;
     overflow-y: auto;
-    scrollbar-width: thin;
+    /* scrollbar-width: thin; */
     scrollbar-color: #aab7cf transparent;
     box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
     background-color: #3bb161;
-    border-radius: 12px;
+    border-radius: 10px;
+
 }
 
 /* @media (max-width: 1199px) {
@@ -278,7 +275,7 @@ h6 {
   }
 } */
 
-.sidebar::-webkit-scrollbar {
+/* .sidebar::-webkit-scrollbar {
     width: 5px;
     height: 8px;
     background-color: #fff;
@@ -286,13 +283,13 @@ h6 {
 
 .sidebar::-webkit-scrollbar-thumb {
     background-color: #aab7cf;
-}
+} */
 
 @media (min-width: 1200px) {
 
     #main,
     #footer {
-        margin-left: 310px;
+        margin-left: 247px;
     }
 }
 
@@ -319,7 +316,7 @@ h6 {
     margin: 0;
     margin-top: 69px;
     list-style: none;
-    margin-left: -10px;
+    margin-left: -25px;
 }
 
 .sidebar-nav li {
@@ -338,14 +335,12 @@ h6 {
     color: #004C8C;
     font-weight: 600;
     margin: 10px 0 5px 15px;
-
 }
 
 .sidebar-nav .nav-link {
     display: flex;
     align-items: center;
-    font-size: 15px;
-    /* font-weight: 600; */
+    font-size: 14px;
     color: #FFFFFF;
     transition: 0.3;
     background: #3bb161;
@@ -376,12 +371,16 @@ h6 {
 .sidebar-nav .nav-link:hover {
     color: white;
     background: #2F9D6A;
-    border-radius: 13px;
+    border-radius: 10px;
+    margin-left: 10px;
+    /* width: 235px;*/
+    /* height: 36px;  */
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
     margin-right: 0;
     transition: transform 0.2s ease-in-out;
+    margin-left: 10px;
 }
 
 .sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
@@ -409,28 +408,74 @@ h6 {
 .sidebar-nav .nav-content a:hover {
     background-color: #2F9D6A;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
+    width: 180px;
 }
 
 /*--------------------------------------------------------------
 # Dashboard
 --------------------------------------------------------------*/
 
+
+#dropdownMenuButton {
+    width: 290px;
+    background-color: white;
+    margin-top: -1px;
+    color: #636363;
+    margin-left: 307px;
+    text-align: left;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+#dropdownMenuButton:hover {
+    background-color: #3BB161;
+    color: white;
+}
+
+.btn-light img {
+    margin-left: -10px;
+}
+
+.btn-second3 {
+    width: 291px;
+    background-color: white;
+    padding: 1px 14px;
+    margin-top: -31px;
+    color: #636363;
+    margin-left: 7px;
+    text-align: left;
+    font-size: 12px;
+    border-radius: 10px;
+    height: 31px;
+    border: none;
+    position: absolute;
+}
+
+.btn-second3:hover {
+    background-color: #3BB161;
+    color: white;
+}
+
+.second-btn3 img {
+    margin-top: -20px;
+    margin-left: 278px;
+    position: absolute;
+}
+
 /* Info Cards */
 .table {
     margin-left: -11px;
     width: 102%;
-    height: 42px;
 }
-
 
 /* Recent Sales */
 .dashboard .recent-sales {
     font-size: 14px;
-    margin-left: 14px;
-    width: 98%;
-    height: 650px;
-    margin-top: 10px;
+    margin-left: 4px;
+    width: 99%;
+    height: 654px;
+    margin-top: 18px;
     border: 1px solid rgb(153, 149, 149);
 }
 
@@ -451,7 +496,6 @@ h6 {
     padding: 10px 0 0 0;
 }
 
-
 tbody,
 td,
 tfoot,
@@ -469,8 +513,9 @@ tr {
 --------------------------------------------------------------*/
 
 .logo img {
-    max-height: 36px;
+    max-height: 47px;
     margin-right: 6px;
+    margin-left: -7px;
 }
 
 .logo span {
@@ -478,7 +523,7 @@ tr {
     font-weight: 700;
     color: #fff;
     margin-top: -14px;
-    margin-left: 52px;
+    margin-left: 41px;
     font-family: 'Comfortaa';
     position: absolute;
 }
@@ -488,25 +533,24 @@ tr {
     font-weight: 700;
     color: #012970;
     margin-top: 48px;
-    margin-left: 51px;
-    font-family: Comfortaa;
+    margin-left: 41px;
+    font-family: 'Comfortaa';
     position: absolute;
 }
-
 
 /* Style the button */
 .dropbtn {
     background-color: white;
     color: #000;
     padding: 16px;
-    font-size: 16px;
+    font-size: 12px;
     border: none;
     cursor: pointer;
     margin-top: 44px;
-    margin-left: 2px;
-    border-radius: 15px;
-    width: 243px;
-    height: 40px;
+    margin-left: -10px;
+    border-radius: 10px;
+    width: 201px;
+    height: 30px;
 }
 
 /* Dropdown content (hidden by default) */
@@ -539,26 +583,33 @@ tr {
     display: block;
 }
 
-
 .img-img img {
     color: #004C8C;
-    width: 16px;
-    margin-top: 54px;
-    margin-left: 13px;
+    width: 10px;
+    margin-top: 55px;
+    margin-left: -1px;
     position: absolute;
 }
 
 .img-img-line img {
-    width: 20px;
-    margin-top: 55px;
-    margin-left: 216px;
+    width: 12px;
+    margin-top: 53px;
+    margin-left: 161px;
     position: absolute;
+    height: 16px;
+}
 
+.img-img1 {
+    width: 50px;
+    height: 30px;
+    margin-top: -31px;
+    position: absolute;
+    margin-left: 142px;
 }
 
 .dropbtn p {
-    margin-top: -8px;
-    margin-left: -9px;
+    margin-top: -9px;
+    margin-left: -25px;
     font-family: 'Comfortaa';
     color: #004C8C;
 }
@@ -569,7 +620,7 @@ tr {
     color: #004C8C;
     padding: 10px;
     margin-top: 10px;
-    margin-left: -7px;
+    margin-left: -18px;
     font-weight: bold;
     position: absolute;
 }
@@ -596,7 +647,7 @@ tr {
     width: 322px;
     height: 180px;
     margin-top: 100px;
-    margin-left: -34px;
+    margin-left: -18px;
     border-radius: 12px;
 }
 
@@ -656,9 +707,7 @@ tr {
     margin-left: 10px;
 }
 
-
 /* ------------------------------------------------------------------------- */
-
 
 .sidebar h6 {
     margin-left: 42px;
@@ -698,14 +747,13 @@ hr {
     margin-left: 0px;
 }
 
-
 .btn-margin-top {
     background-color: #3BB161;
     color: #004C8C;
     border: none;
     font-size: 14px;
     width: 121px;
-    margin-left: 886px;
+    margin-left: 948px;
     border-radius: 10px;
 }
 
@@ -731,9 +779,6 @@ hr {
     border-radius: 15px;
 }
 
-
-
-
 .col-md-4 .button {
     margin-top: 10px;
 }
@@ -741,8 +786,6 @@ hr {
 #cap {
     margin-left: 500px;
 }
-
-
 
 .modal-header .btn-close {
     margin-top: -30px;
@@ -754,7 +797,6 @@ hr {
     width: 32px;
     height: 32px;
     background-color: #004C8C;
-
 }
 
 .test .image1 {
@@ -766,7 +808,7 @@ hr {
     background-color: white;
     margin-top: -10px;
     color: black;
-    margin-left: 50px;
+    margin-left: 12px;
     text-align: left;
     font-size: 12px;
     border-radius: 10px;
@@ -777,7 +819,7 @@ hr {
     background-color: white;
     margin-top: -10px;
     color: black;
-    margin-left: 16px;
+    margin-left: 6px;
     text-align: left;
     font-size: 12px;
     border-radius: 10px;
@@ -787,9 +829,6 @@ hr {
     margin-left: -10px;
 }
 
-
-
-
 .btn-danger img {
     margin-left: -6px;
 }
@@ -798,8 +837,6 @@ hr {
     background-color: #3BB161;
     border: none;
 }
-
-
 
 #dropdownid {
     width: 150px;
@@ -843,7 +880,6 @@ hr {
     display: block;
     width: 340px;
     border-radius: 15px;
-
 }
 
 .rupees-card img {
@@ -873,7 +909,7 @@ hr {
 
 .img-calendar img {
     margin-top: -25px;
-    margin-left: 325px;
+    margin-left: 287px;
     position: absolute;
 }
 

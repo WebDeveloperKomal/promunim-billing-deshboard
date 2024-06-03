@@ -43,17 +43,21 @@
             </div>
 
             <div class="img-img-line">
-                <img src="assets/img/icon8.png">
+                <img src="assets/img/Vector (3).png">
             </div>
 
             <button class="dropbtn">
                 <p>Create Sales Invoice</p>
             </button>
             <!-- <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div> -->
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+</div> -->
+        </div>
+
+        <div class="img-img1">
+            <img src="assets/img/Exclude.png" alt="">
         </div>
 
         <div class="para">
@@ -64,7 +68,7 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="index.html">
+                <a class="nav-link " href="dashboard.html">
                     <img class="img-class" src="assets/img/four-squares-icon 1.png">
                     <span>&nbsp;&nbsp;Dashboard</span>
                 </a>
@@ -73,7 +77,7 @@
 
 
             <li class="nav-item">
-                <a class="nav-link " href="index.html">
+                <a class="nav-link " href="create-party.html">
                     <img class="img-class2" src="assets/img/two.png">
                     <span>&nbsp;&nbsp;Parties</span>
                 </a>
@@ -111,7 +115,7 @@
                 </a>
                 <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                     <li>
-                        <a href="#">
+                        <a href="salesinvoice-home.html">
                             <span>Sales Invoices</span>
                         </a>
                     </li>
@@ -187,7 +191,7 @@
             <!-- End Icons Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#">
+                <a class="nav-link collapsed" href="reports.html">
                     <img class="img-class4" src="assets/img/report.png">
                     <span class="report">Reports
                     </span>
@@ -245,7 +249,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
                     <img class="img-class7" src="assets/img/line5.png">
-                    <span class="staff">Staff Attendance & Payroll
+                    <span class="staff">Staff Attendance & Pay
                     </span>
                 </a>
             </li>
@@ -304,114 +308,89 @@
     </aside>
     <!-- End Sidebar-->
 
-    <main id="main" class="main">
 
+    <!-- main section -->
+    <main id="main" class="main">
         <div class="pagetitle">
             <h1>Parties</h1>
             <button type="button" class="btn btn-light btn-margin-left"><i class="bi bi-receipt-cutoff"></i>
-                Reports&nbsp;&nbsp;<i class="bi bi-chevron-down"></i></button>
-            <button type="button" class="btn btn-light btn-margin-top"> <i class="bi bi-gear-fill"></i>Setting
+                &nbsp;Reports&nbsp;&nbsp;<i class="bi bi-chevron-down"></i></button>
+            <button type="button" class="btn btn-light btn-margin-top"> <i class="bi bi-gear-fill"></i>&nbsp;Setting
             </button>
             <hr>
-            <nav>
-                <!-- <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Dashboard</li>
-                </ol> -->
-            </nav>
         </div>
         <!-- End Page Title -->
 
         <section class="section dashboard">
             <div class="row">
-
                 <!-- Left side columns -->
                 <div class="col-lg-12">
                     <div class="row">
 
                         <!-- Sales Card -->
                         <div class="col-xxl-4 col-md-4">
-                            <div class="card info-card sales-card">
-
+                            <div class="card info-card sales-card custom-border">
                                 <div class="filter">
                                     <a class="icon" href="#" data-bs-toggle="dropdown"></a>
                                 </div>
-
                                 <div class="card-body">
                                     <h5 class="card-title"><i class="bi bi-people-fill"></i>
-                                        All Parties</h5>
-
+                                        &nbsp;&nbsp;All Parties</h5>
                                     <div class="d-flex align-items-center">
-
                                         <div class="ps-0">
                                             <h4>8</h4>
-
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <!-- End Sales Card -->
 
-
                         <!-- Revenue Card -->
                         <div class="col-xxl-4 col-md-4">
-                            <div class="card info-card revenue-card custom-border">
-
+                            <div class="card info-card revenue-card">
                                 <div class="filter">
                                     <a class="icon" href="#" data-bs-toggle="dropdown"></a>
                                 </div>
-
                                 <div class="card-body">
-                                    <h5 class="card-title"><i class="bi bi-currency-rupee"></i> To Collect</h5>
-
+                                    <h5 class="card-title"><i class="bi bi-currency-rupee"></i>
+                                        &nbsp;&nbsp;To Collect</h5>
                                     <div class="d-flex align-items-center">
-
                                         <div class="ps-0">
                                             <h4>₹60000</h4>
-
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <!-- End Revenue Card -->
 
-
                         <!-- Customers Card -->
                         <div class="col-xxl-4 col-xl-4">
-
                             <div class="card info-card customers-card">
-
                                 <div class="filter">
                                     <a class="icon" href="#" data-bs-toggle="dropdown"></a>
                                 </div>
-
                                 <div class="card-body">
-                                    <h5 class="card-title"><i class="bi bi-currency-rupee" style="color: red;"></i> To
-                                        Pay</h5>
-
+                                    <h5 class="card-title"><i class="bi bi-currency-rupee" style="color: red;"></i>
+                                        &nbsp;&nbsp;To Pay</h5>
                                     <div class="d-flex align-items-center">
-
                                         <div class="ps-0">
                                             <h4 style="color: red;">₹60000</h4>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                         <!-- End Customers Card -->
 
                         <div class="col-md-4">
                             <div class="dropdown">
+
                                 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-calendar-date"></i>&nbsp;&nbsp;&nbsp;&nbsp;Last 365
-                                    Days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Select
+                                    Categories&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </button>
 
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -421,71 +400,55 @@
                                             New Category</a></li>
                                 </ul>
 
-
-
                                 <!-- Create Category Modal -->
                                 <div class="modal fade" id="createCategoryModal" tabindex="-1"
                                     aria-labelledby="createCategoryModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-lg">
                                         <div class="modal-content">
-
-
                                             <div class="modal-header align-items-center">
                                                 <h5 class="modal-title" id="createCategoryModalLabel">Create New
                                                     Category</h5>
-
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-
-
                                             <div class="modal-body">
                                                 <form>
                                                     <div class="mb-3">
-                                                        <label for="categoryName" class="form-label">Category
-                                                            Name</label>
+                                                        <label for="categoryName" class="form-label">CATEGORY
+                                                            NAME</label>
                                                         <input type="text" class="form-control" id="categoryName"
                                                             placeholder="Enter category name" required>
                                                     </div>
-
                                                     <button type="button" class="btn btn-light" id="moal"
                                                         data-bs-dismiss="modal">Close</button>
                                                     <button type="submit" class="btn btn-primary">Save</button>
-
                                                 </form>
                                             </div>
-
-
                                         </div>
                                     </div>
                                 </div>
-
                                 <!-- end model -->
-
 
                                 &nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-light"><i
                                         class="bi bi-search"></i></button>
                             </div><br><br>
                         </div>
 
-
-                        <div class="col-md-4" id="cap">
-                            <button type="button" class="btn btn-light"><img src="assets/img/slideshow-icon 1.png"
+                        <!-- <div class="col-md-4" id="cap">
+                            <button type="button"><img src="assets/img/slideshow-icon 1.png"
                                     alt="">&nbsp;&nbsp;&nbsp;&nbsp;Bulk Action
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-                                    class="bi bi-chevron-down"></i></button>&nbsp;&nbsp;&nbsp;<button type="button"
-                                class="btn btn-light">Create
+                                    class="bi bi-chevron-down"></i>
+                            </button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-warning">Create
                                 Party</button>
-                        </div><br><br>
+                        </div><br><br> -->
 
 
                         <!-- Recent Sales -->
                         <div class="col-12" id="b1">
                             <div class="card recent-sales overflow-auto">
-
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold"></h5>
-
                                     <table class="table">
                                         <thead>
                                             <th scope="col" style="color: #004C8C;">Party Name</th>
@@ -494,7 +457,6 @@
                                             <th scope="col" style="color: #004C8C;">Party Type</th>
                                             <th scope="col" style="color: #004C8C;">Balance</th>
                                         </thead>
-
                                         <tbody>
                                             <tr>
                                                 <th scope="row">07/03/2024</th>
@@ -503,7 +465,6 @@
                                                 <td>Name</td>
                                                 <td>₹2000</span>
                                             </tr>
-
                                             <tr>
                                                 <th scope="row">07/03/2024</th>
                                                 <td>Add Money</td>
@@ -538,7 +499,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

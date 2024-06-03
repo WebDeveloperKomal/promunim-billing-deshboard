@@ -4,21 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
     <title>Dashboard - Promunim</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
-
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -27,7 +23,6 @@
     <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
-
     <!-- Template Main CSS File -->
     <link href="sales-summary.css" rel="stylesheet">
 </head>
@@ -49,17 +44,21 @@
             </div>
 
             <div class="img-img-line">
-                <img src="assets/img/icon8.png">
+                <img src="assets/img/Vector (3).png">
             </div>
 
             <button class="dropbtn">
                 <p>Create Sales Invoice</p>
             </button>
             <!-- <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div> -->
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+</div> -->
+        </div>
+
+        <div class="img-img1">
+            <img src="assets/img/Exclude.png" alt="">
         </div>
 
         <div class="para">
@@ -103,6 +102,7 @@
                         <a href="#">
                             <img src="assets/img/home.png" alt="">&nbsp;&nbsp;<span>Godown (Warehouse)</span>
                         </a>
+                    </li>
                 </ul>
             </li>
             <!-- End Components Nav -->
@@ -250,7 +250,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
                     <img class="img-class7" src="assets/img/line5.png">
-                    <span class="staff">Staff Attendance & Payroll
+                    <span class="staff">Staff Attendance & Pay
                     </span>
                 </a>
             </li>
@@ -309,11 +309,11 @@
     </aside>
     <!-- End Sidebar-->
 
+
+    <!-- main section -->
     <main id="main" class="main">
         <div class="pagetitle">
             <h1><i class="bi bi-chevron-left"></i>&nbsp;Sales Summary</h1>
-
-
             <button type="button" class="btn btn-light btn-margin-top"><i
                     class="bi bi-star-fill"></i>&nbsp;&nbsp;&nbsp;Favourite
             </button>
@@ -327,10 +327,6 @@
                 <!-- Left side columns -->
                 <div class="col-lg-12">
                     <div class="row">
-
-
-
-
                         <div class="col-md-4">
                             <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuButton"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -352,106 +348,30 @@
                                 <a class="dropdown-item" href="#">Last 365 Days</a>
                                 <a class="dropdown-item" href="#">Custom Date Range</a>
                             </div>
-
                         </div>
 
-
-
-
-                        <!-- <div class="col-md-4">
-
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="dropdownid">
-                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                        data-bs-target="#createCategoryModal"><i class="bi bi-download"></i>Bulk
-                                        Upload</a>
-                                </li>
-                            </div>
-                        </div>
-
-
-                        <div class="modal fade" id="createCategoryModal" tabindex="-1"
-                            aria-labelledby="createCategoryModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header align-items-center">
-                                        <h5 class="modal-title fw-bold" id="createCategoryModalLabel">Invoice Bulk
-                                            Upload
-                                        </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="row">
-                                                <div class="form-group col-sm-6">
-                                                    <label for="selectRange">Select Date Range</label>
-                                                    <input type="email" class="form-control" id="selectRange"
-                                                        placeholder="Last 365 Days">
-                                                </div>
-                                                <div class="form-group col-sm-6">
-                                                    <label for="selectParty">Select Party(Optional)</label>
-                                                    <input type="email" class="form-control" id="selectParty"
-                                                        placeholder="All Parties">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group col-sm-12">
-                                                <label for="email" class="form-label">Email*</label>
-                                                <input type="text" class="form-control" id="email"
-                                                    placeholder="Enter Email ID" required>
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" onchange="showInputField()">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Send to CA
-                                                </label>
-                                            </div>
-
-                                            <div class="form-group row" id="inputFieldGroup" style="display:none;">
-                                                <div class="col-sm-12">
-                                                    <input type="text" class="form-control" id="inputField"
-                                                        placeholder="Enter CA Email ID">
-                                                </div>
-                                            </div>
-
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Email</button>
-
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- end model -->
 
                         <div class="second-btn2">
                             <button type="button" class="btn-second2">Invoice Status</button>
-                            <img src="down-black-arrow.png">
+                            <img src="assets/img/down-black-arrow.png">
                         </div>
 
                         <div class="second-btn3">
                             <button type="button" class="btn-second3">All Parties</button>
-                            <img src="down-black-arrow.png">
+                            <img src="assets/img/down-black-arrow.png">
                         </div>
 
                         <div class="second-btn4">
                             <button type="button" class="btn-second4">Invoice type</button>
-                            <img src="down-black-arrow.png">
+                            <img src="assets/img/down-black-arrow.png">
                         </div>
-
-
 
                         <!-- Recent Sales -->
                         <div class="col-12" id="b1">
                             <div class="card recent-sales overflow-auto">
                                 <div class="card-box-table">
                                     <table class="table table-bordered">
-
                                         <tbody>
-
                                             <tr>
                                                 <td>DATE:</th>
                                                 <td>INVOICE NO.</td>
@@ -462,32 +382,24 @@
                                                 <td>INVOICE TYPE</td>
                                                 <td>INVOICE STATUS</td>
                                             </tr>
-
                                         </tbody>
                                     </table>
-
-
-
-
                                 </div>
-
                             </div>
                         </div>
+
                         <div class="live-table">
                             <div class="table-live">
                                 <h2>Net Profit: ₹ 0</h2>
                             </div>
                         </div>
-
                     </div>
                     <div class="rupees-card">
-                        <img src="rupees-card.png">
+                        <img src="assets/img/rupees-card.png">
                         <h2>No transactions available to generate report</h2>
                     </div>
                     <div class="color-box">
                         <div class="color-light">
-
-
                         </div>
                     </div>
                 </div>
