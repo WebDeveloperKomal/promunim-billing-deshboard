@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    height: 97px;
+    background-color: #3BB161;
+}
+
+img {
+    width: 136px;
+    height: 60px;
+    /* padding: 23px; */
+    margin-left: 34px;
+    margin-top: 20px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section1 {
+    padding: 40px;
+}
+
+.p1 {
+    font-family: 'Comfortaa';
+    line-height: 57px;
+    font-weight: bold;
+    font-size: 46px;
+    color: #3BB161;
+}
+
+ol {
+    padding: 5px;
+}
+
+ol li {
+    color: #004C8C;
+    font-size: 22px;
+    font-family: 'Comfortaa';
+    line-height: 33px;
+
+}
+
+.sec1img {
+    width: 605px;
+    height: 323.49px;
+}
+
+.section2 {
+    padding: 12px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 581px;
+    height: 658px;
+    margin: auto;
+    padding: 2px;
+}
+
+h2 {
+    text-align: center;
+    color: #3BB161;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 57px;
+    font-family: 'Comfortaa';
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group1 {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group input {
+    width: 501px;
+    height: 55px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: 'Comfortaa';
+    margin-left: 18px;
+    padding-left: 18px;
+    /* Add padding to input to adjust text and placeholder positioning */
+}
+
+.form-control {
+    width: 501px;
+    height: 55px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: 'Comfortaa';
+    margin-left: 18px;
+    padding-left: 18px;
+    /* Add padding to input to adjust text and placeholder positioning */
+}
+
+.form-group input::placeholder {
+    /* Placeholder specific styles here, margin-left won't affect placeholder */
+    color: #888;
+    /* Example: changing the placeholder text color */
+    font-family: 'Comfortaa';
+    /* Ensuring the font family applies to the placeholder as well */
+}
+
+.btn-primary {
+    width: 236px;
+    height: 63px;
+    background-color: #3BB161;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.custom-select {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    width: 519px;
+    /* padding: 10px; */
+    height: 55px;
+    margin-left: 17px;
+}
+
+.selected-option {
+    border-bottom: 0px solid #eee;
+    /* background-color: #f9f9f9; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 519px;
+    font-family: 'Comfortaa';
+    color: #636363;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.selected-option img {
+    height: 7.67px;
+    width: 13px;
+}
+
+.option1 img {
+    height: 7.67px;
+    width: 14px;
+}
+
+.options-container {
+    display: none;
+    position: absolute;
+    width: 519px;
+    height: 212px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background-color: white;
+    border-radius: 7.46px;
+    margin-top: -74px;
+    margin-left: -10px;
+}
+
+.options-container ul {
+    list-style-type: disc;
+    padding: 0;
+    margin-left: 39px;
+}
+
+.option,
+.option1 {
+    padding: 6px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 27px;
+    font-family: 'Comfortaa';
+
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+    margin: 2px 41px;
+}
+
+/* .form-group input[type="checkbox"] {
+        margin-left: 11px;
+        height: 15px;
+        width: 14px;
+    }
+    .form-group input[type="checkbox"]:checked{
+        background-color: #3BB161;
+    } */
+.options-container {
+    display: none;
+    position: absolute;
+    width: 519px;
+    height: 212px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background-color: white;
+    border-radius: 7.46px;
+    margin-top: -74px;
+    margin-left: -10px;
+}
+
+.custom-checkbox .check label {
+    display: block;
+    margin-left: 25px;
+    /* Adjust the margin to align the label with the checkbox */
+    cursor: pointer;
+    /* Changes the cursor to indicate clickable area */
+    font-family: 'Comfortaa';
+}
+
+.check input[type="checkbox"] {
+    margin-left: 26px;
+    height: 15px;
+    width: 14px;
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+.check input[type="checkbox"]:checked {
+    background-color: #3BB161;
+    color: #3BB161;
+    border: none;
+    /* Remove default border styles */
+}
+
+.form-wrapper {
+    background-color: #fff;
+    /* White background */
+    padding: 20px;
+    /* Space inside the box */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    max-width: 600px;
+    /* Max width of the form container */
+    margin: 0 auto;
+    /* Center the form */
+}
+
+p {
+    margin-left: -20px;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust padding and margin for smaller screens */
+    .section1,
+    .section2 {
+        padding: 20px;
+    }
+
+    img {
+        padding: 15px;
+    }
+
+    .p1,
+    ol li {
+        font-size: 16px;
+        /* Smaller font size for mobile */
+    }
+
+    .body {
+        /* If not already, ensure vertical stacking with comfortable spacing */
+        flex-direction: column;
+        gap: 20px;
+        /* Add space between stacked items */
+    }
+
+    /* Adjust form elements for smaller screens */
+    .form-group input,
+    .form-group select,
+    .custom-select,
+    .selected-option,
+    .options-container {
+        width: calc(100% - 40px);
+        /* Consider padding */
+        margin: 0 20px;
+        /* Center content with margins */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Further adjustments for smaller mobile screens */
+    .p1,
+    ol li {
+        font-size: 14px;
+        /* Even smaller font size for smaller devices */
+    }
+
+    /* Adjust padding and margins to fit smaller screens better */
+    .section1,
+    .section2,
+    .form-container {
+        padding: 15px;
+    }
+}

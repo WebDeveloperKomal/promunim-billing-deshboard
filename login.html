@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <title>Login - Promunim</title>
+</head>
+
+<body>
+
+    <body ng-app="loginApp" ng-controller="LoginController">
+        <form action="" id="loginbynumber">
+            <div class="body-container" ng-show="isVisible">
+                <img src="assets/img/Layer_11.png" alt="" class="logo">
+                <div class="login-container">
+                    <img src="assets/img/Frame (1).png" class="cutimg" alt="" ng-click="hidePage()">
+
+                    <h2>Login / Register</h2>
+                    <div class="login-method">
+
+                        <div class="phone-login">
+
+                            <div class="phone-input-container">
+                                <div class="form-group">
+                                    <input type="text" id="form_name1" name="form_name1" required pattern="^[0-9]{10}$"
+                                        maxlength="10" placeholder=" ">
+                                    <label for="form_name1"><img src="assets/img/Rectangle 62.png" alt="icon"> Phone
+                                        Number<span class="gl-form-asterisk"></span></label>
+                                </div>
+                                <button class="get-otp" onclick="handleGetOtp(event)">Get OTP</button>
+                            </div>
+
+
+                            <div class="or-divider">
+                                <img src="Line 5.png" class="line1" alt="">
+                                <p class="or">OR</p>
+                                <img src="Line 5.png" class="line2" alt="">
+                            </div>
+                            <div class="qr-login">
+                                <img src="assets/img/qr-code-scan-icon 1.png" alt="">
+                                <a href="loginqr.html" class="qr">Login by Scanning QR Code</a>
+                            </div>
+                            <div class="dashboard">
+                                <a href="dashboard1.html">Click to the Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        <script>
+            angular.module('loginApp', [])
+                .controller('LoginController', function ($scope) {
+                    $scope.formData = {};
+                    $scope.submitForm = function () {
+                        if ($scope.phoneNumberForm.$valid) {
+                            alert('Form is valid!');
+                        } else {
+                            alert('Form is not valid. Please enter a valid phone number.');
+                        }
+                    };
+                });
+            angular.module('loginApp', [])
+                .controller('LoginController', function ($scope) {
+                    $scope.isVisible = true;
+                    $scope.hidePage = function () {
+                        $scope.isVisible = !$scope.isVisible;
+                    };
+                });
+
+        </script>
+
+        <script>
+            function handleGetOtp(event) {
+                event.preventDefault();
+                const phoneNumberInput = document.getElementById('form_name1');
+                const phoneNumber = phoneNumberInput.value;
+
+                // Validate phone number
+                const phonePattern = /^[0-9]{10}$/;
+                if (phonePattern.test(phoneNumber)) {
+                    // Redirect to dashboard1.html if valid
+                    window.location.href = 'dashboard1.html';
+                } else {
+                    alert('Please enter a valid 10-digit phone number.');
+                }
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body {
+    font-family: 'Comfortaa';
+}
+
+.logo {
+    width: 155px;
+    height: 80px;
+    padding-left: 125px;
+}
+
+.body-container {
+    width: 100%;
+    height: 840px;
+    max-width: 426px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+    width: 100%;
+    height: 840px;
+    max-width: 426px;
+    margin: 20px auto;
+    /* padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border: 2px solid #ccc;
+    /* Add a solid border */
+    border-radius: 8px;
+}
+
+.qr-login {
+    text-align: center;
+}
+
+.qr-login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 31.39px;
+    font-weight: bold;
+    line-height: 38.9px;
+    color: #3BB161;
+}
+
+.qr-login p {
+    font-size: 12.38px;
+    line-height: 38px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 66px;
+    margin-top: -17px;
+}
+
+.qr-code {
+    width: 107px;
+    /* Adjust based on your QR code image size */
+    height: 106px;
+    margin: 20px 0;
+}
+
+.or-divider {
+    text-align: center;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.mobile-login {
+    text-decoration: none;
+    color: white;
+    margin-top: 6px;
+}
+
+.mobile-login {
+    text-align: center;
+    background-color: #3BB161;
+    border-radius: 10px;
+    height: 46.57px;
+    width: 284.81px;
+    font-family: 'Comfortaa';
+    margin-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.or-divider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.or {
+    text-align: center;
+    margin: 20px 0;
+    color: #004C8C;
+    font-size: 8.17px;
+    font-family: 'Comfortaa';
+
+}
+
+.cutimg {
+    margin-left: 410px;
+}
+
+.line1,
+.line2 {
+    width: 200px;
+}
+
+.cutimg {
+    margin-left: 410px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login QR Code Promunim</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="loginqr.css">
+</head>
+
+<body ng-app="loginApp" ng-controller="LoginController">
+    <form action="" id="logibyqr">
+        <div class="body-container" ng-show="isVisible">
+            <img src="assets/img/Layer_11.png" alt="" class="logo">
+            <div class="login-container">
+                <img src="assets/img/Frame (1).png" class="cutimg" alt="" ng-click="hidePage()">
+                <div class="qr-login">
+                    <h2>Login with QR</h2><br>
+                    <p>1. Open BillBook mobile App</p>
+                    <p>2. Click on <strong>More ...</strong> and select <strong>Desktop Login</strong></p>
+                    <p>3. Scan the QR Code given below</p>
+                    <!-- Insert your QR Code Image below -->
+                    <img src="assets/img/Vector (4).png" alt="QR Code" class="qr-code">
+                </div>
+
+                <div class="or-divider">
+                    <img src="assets/img/Line 5.png" class="line1" alt="">
+                    <p class="or">OR</p>
+                    <img src="assets/img/Line 5.png" class="line2" alt="">
+                </div>
+
+                <div class="mobile-login">
+                    <a href="login.html">
+                        <p>Login with Mobile Number</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        angular.module('loginApp', []).controller('LoginController', function ($scope) {
+            // Initialize visibility control variable
+            $scope.isVisible = true;
+
+            // Function to toggle page visibility
+            $scope.hidePage = function () {
+                $scope.isVisible = !$scope.isVisible;
+            };
+        });
+    </script>
+</body>
+
+</html>

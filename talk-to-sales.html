@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <title>Talk To sale - Promunim</title>
+    <link rel="stylesheet" href="talk-to-sales.css">
+</head>
+
+<body>
+    <nav>
+        <a href="header.html"> <img src="assets/img/Layer_1.png" alt=""></a>
+    </nav>
+    <div class="body">
+        <div class="section1">
+            <p class="p1">Talk To Sales</p><br>
+            <ol>
+                <li>Discover how BillBook can simplify your billing challenges</li>
+                <li>Demo on your industry's use cases</li>
+                <li>Current offers on suitable pricing plans</li>
+                <img src="assets/img/Rectangle.png" alt="" class="sec1img">
+        </div>
+        <div class="section2">
+            <div class="form-container">
+                <h2>Call me back</h2>
+                <a href="index.html"><img src="assets/img/Frame (1).png" alt="" class="cross"></a>
+
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" id="businessName" name="businessName" placeholder="Business Name*" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="yourName" name="yourName" placeholder="Your Name*" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-select" onclick="toggleDropdown()">
+                            <div class="selected-option">Size Of Your Business* <img src="Vector (3).png"></div>
+                            <div class="options-container">
+                                <div class="option1">Size Of Your Business* <img src="Vector (2).png"
+                                        class="toggle-image"></div>
+                                <ul>
+                                    <li>
+                                        <div class="option" data-value="Upto 40 Lakhs">Upto 40 Lakhs</div>
+                                    </li>
+                                    <li>
+                                        <div class="option" data-value="40 Lakhs to 1 Crore">40 Lakhs to 1 Crore</div>
+                                    </li>
+                                    <li>
+                                        <div class="option" data-value="1 Crore to 5 Crores">1 Crore to 5 Crores</div>
+                                    </li>
+                                    <li>
+                                        <div class="option" data-value="More than 5 Crores">More than 5 Crores</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="businessSize" id="businessSize">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-select" onclick="toggleDropdown0()">
+                            <div class="selected-option">Nature of inboumd enquiry* <img src="Vector (3).png"></div>
+                            <div class="options-container">
+                                <div class="option1">Nature of inboumd enquiry* <img src="Vector (2).png"
+                                        class="toggle-image0"></div>
+                                <ul>
+                                    <li>
+                                        <div class="option" data-value="General">General</div>
+                                    </li>
+                                    <li>
+                                        <div class="option" data-value="Demo">Demo</div>
+                                    </li>
+                                    <li>
+                                        <div class="option" data-value="Pricing Plan and offers">Pricing Plan and offers
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="businessSize" id="businessSize">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-select">
+                            <div class="selected-option" onclick="toggleDropdown1()">Why do you need BillBook?* <img
+                                    src="Vector (3).png" class="dropdown-arrow"></div>
+                            <div class="options-container">
+                                <div class="option1">Why do you need BillBook?* <img src="Vector (2).png"
+                                        class="toggle-image1"></div>
+                                <div class="check"><br>
+                                    <input type="checkbox" id="option1" name="option" value="Upto 40 Lakhs">
+                                    <label for="option1" style="font-family: 'Comfortaa';">Upto 40 Lakhs</label>
+                                </div><br>
+                                <div class="check">
+                                    <input type="checkbox" id="option2" name="option" value="40 Lakhs to 1 Crore">
+                                    <label for="option2" style="font-family: 'Comfortaa';">40 Lakhs to 1 Crore</label>
+                                </div><br>
+                                <div class="check">
+                                    <input type="checkbox" id="option2" name="option" value="1 Crore to 5 Crores">
+                                    <label for="option2" style="font-family: 'Comfortaa';">1 Crore to 5 Crores</label>
+                                </div><br>
+                                <div class="check">
+                                    <input type="checkbox" id="option2" name="option" value="More than 5 Crores">
+                                    <label for="option2" style="font-family: 'Comfortaa';">More than 5 Crores</label>
+                                </div>
+
+                            </div>
+                            <input type="hidden" name="businessSize" id="businessSize">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="number" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number*"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-select" onclick="toggleDropdown2()">
+                            <div class="selected-option">Why should we call you* <img src="Vector (3).png"></div>
+                            <div class="options-container">
+                                <div class="option1">Why should we call you* <img src="Vector (2).png"
+                                        class="toggle-image2"></div>
+                                <ul>
+                                    <li>
+                                        <div class="option" data-value="Upto 40 Lakhs">Call Me Today</div>
+                                    </li>
+                                    <li>
+                                        <div class="option" data-value="Upto 40 Lakhs">Call Me Tomorrow</div>
+                                    </li>
+                                    <li>
+                                        <div class="option" data-value="Upto 40 Lakhs">Call Me Later</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="businessSize" id="businessSize">
+                        </div>
+                    </div>
+
+                    <div class="form-group1">
+                        <button type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Listen for clicks on the document
+                document.addEventListener('click', function (event) {
+                    // Check if the clicked element is a dropdown toggle or a descendant of a dropdown toggle
+                    const toggle = event.target.closest('.custom-select');
+                    if (toggle) {
+                        // Prevent the click from immediately propagating
+                        event.stopImmediatePropagation();
+                        // Toggle visibility of the options container
+                        const optionsContainer = toggle.querySelector('.options-container');
+                        const isVisible = optionsContainer.style.display === 'block';
+                        // First, close all dropdowns
+                        document.querySelectorAll('.custom-select .options-container').forEach(function (container) {
+                            container.style.display = 'none';
+                        });
+                        // Then, if the clicked dropdown was not already open, open it
+                        if (!isVisible) {
+                            optionsContainer.style.display = 'block';
+                        }
+                    } else {
+                        // If the clicked element is not part of a dropdown, close all dropdowns
+                        document.querySelectorAll('.custom-select .options-container').forEach(function (container) {
+                            container.style.display = 'none';
+                        });
+                    }
+                });
+
+                // Handle option selection in dropdowns
+                document.querySelectorAll('.custom-select .option').forEach(function (option) {
+                    option.addEventListener('click', function () {
+                        const value = this.getAttribute('data-value');
+                        const text = this.textContent;
+                        const customSelect = this.closest('.custom-select');
+                        customSelect.querySelector('.selected-option').textContent = text;
+                        customSelect.querySelector('input[type="hidden"]').value = value;
+                    });
+                });
+            });
+
+        </script>
+</body>
+
+</html>
