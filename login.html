@@ -21,7 +21,6 @@
 
                     <h2>Login / Register</h2>
                     <div class="login-method">
-
                         <div class="phone-login">
 
                             <div class="phone-input-container">
@@ -31,9 +30,8 @@
                                     <label for="form_name1"><img src="assets/img/Rectangle 62.png" alt="icon"> Phone
                                         Number<span class="gl-form-asterisk"></span></label>
                                 </div>
-                                <button class="get-otp" onclick="handleGetOtp(event)">Get OTP</button>
+                                <button class="get-otp" onclick="getotp()">Get OTP</button>
                             </div>
-
 
                             <div class="or-divider">
                                 <img src="Line 5.png" class="line1" alt="">
@@ -51,6 +49,7 @@
                     </div>
                 </div>
         </form>
+
         <script>
             angular.module('loginApp', [])
                 .controller('LoginController', function ($scope) {
@@ -70,23 +69,19 @@
                         $scope.isVisible = !$scope.isVisible;
                     };
                 });
-
         </script>
 
         <script>
-            function handleGetOtp(event) {
-                event.preventDefault();
-                const phoneNumberInput = document.getElementById('form_name1');
-                const phoneNumber = phoneNumberInput.value;
+            function getotp() {
+                // Generate OTP logic here
+                var otp = "123456"; // For demonstration purposes, replace with actual OTP generation logic
 
-                // Validate phone number
-                const phonePattern = /^[0-9]{10}$/;
-                if (phonePattern.test(phoneNumber)) {
-                    // Redirect to dashboard1.html if valid
-                    window.location.href = 'dashboard1.html';
-                } else {
-                    alert('Please enter a valid 10-digit phone number.');
-                }
+                // Show alert with OTP
+                var otpAlert = "OTP Generated Successfully: " + otp;
+                alert(otpAlert);
+
+                // Redirect after user clicks OK
+                window.location.href = 'dashboard1.html';
             }
         </script>
     </body>

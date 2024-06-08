@@ -2880,7 +2880,7 @@ h3 {
 .img {
   aspect-ratio: 2.86;
   object-fit: auto;
-  margin-left: 18%;
+  margin-left: 12%;
   object-position: center;
   border-radius: 10px;
   /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
@@ -3029,7 +3029,7 @@ h3 {
 .super-power-container-boundaries .super-power-container-header-container-boundaries .super-power-container-sub-header-boundaries {
   color: #004C8C;
   font-family: 'comfortaa';
-  font-size: 22px;
+  font-size: 21px;
   text-align: center;
   margin-top: -39%;
   font-weight: 400;
@@ -3137,7 +3137,7 @@ h3 {
 @media (max-width: 1382px) {
   .img {
     max-width: 68%;
-    margin-left: 3%;
+    margin-left: 1%;
   }
 
   .div02 {
@@ -3337,7 +3337,7 @@ h3 {
 
 
 /* footer css start */
-/* .footer {
+.footer {
   border-radius: 10px;
   background-color: rgba(59, 177, 97, 0.15);
   margin-top: 6px;
@@ -3358,7 +3358,7 @@ h3 {
   width: 183px;
   height: 80.2px;
   padding-left: 38px;
-  padding-top: 20px;
+  padding-top: 9px;
 }
 
 .footer-img {
@@ -3366,29 +3366,205 @@ h3 {
   height: 236px;
   padding-top: 116px;
   padding-left: 49px;
-} */
+}
 
-/* .footer-section{
-  padd
-} */
-/* 
-.footer-section h4 {
+.footer-section1 h4 {
   margin-bottom: 30px;
   font-family: 'Comfortaa';
   font-size: 19.32px;
+  color: #004C8C;
+  font-weight: 900;
+}
+
+.footer-section1 ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 357px;
+  line-height: 129%;
+  font-size: 15.46px;
   color: black;
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li a {
-  color: 151515;
+.footer-section1 ul li a {
+  color: black;
   text-decoration: none;
   font-family: 'Comfortaa';
-} */
+}
+
+.menu {
+  padding-left: 359px;
+  margin-top: -73px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: -38px;
+  color: black;
+  font-size: 15.46px;
+  font-family: 'Comfortaa';
+}
+
+.footer-section2 h4 {
+  margin-bottom: 30px;
+  font-family: 'Comfortaa';
+  font-size: 19.32px;
+  color: #004C8C;
+  font-weight: 900;
+}
+
+.software {
+  padding-left: 568px;
+  margin-top: -193px;
+}
+
+.footer-section2 ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 331px;
+  line-height: 129%;
+  font-size: 15.46px;
+  color: black;
+}
+
+.footer-section2 ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Comfortaa';
+  padding-left: 240px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-cards {
+  display: block;
+  gap: 20px;
+  /* Spacing between cards */
+  justify-content: center;
+  /* Center the cards horizontally */
+  padding: 20px;
+  /* Optional: Adds some space around the cards */
+  padding-left: 860px;
+  margin-top: -413px;
+}
+
+.contact-card {
+  background-color: #fff;
+  font-family: 'Comfortaa';
+  color: #151515;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 17px;
+  width: 438.67px;
+  height: 135px;
+}
+
+.contact-cards .contact-card .cdh1 {
+  font-family: 'Comfortaa';
+  color: #004C8C;
+  font-size: 19.12px;
+}
+
+.contact-card p {
+  margin: 0 0 10px;
+  /* Adds margin to the bottom of paragraphs */
+  line-height: 2.6;
+  /* Improves readability */
+  font-family: 'Comfortaa';
+}
+
+/* Optionally, remove the bottom margin from the last paragraph in each card */
+.contact-card p:last-child {
+  margin-bottom: 0;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location p {
+  margin: 0 0 10px;
+  /* Adds margin to the bottom of paragraphs */
+  line-height: 1.6;
+  /* Improves readability */
+  font-family: 'Comfortaa';
+  font-size: 15.46px;
+}
+
+.location .locationimg {
+  margin-right: 23px;
+}
+
+.contact {
+  font-family: 'Comfortaa';
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.cimgs {
+  margin-right: 2px;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -39px;
+  margin-left: 50px;
+}
+
+.icon p {
+  font-family: 'Comfortaa';
+  color: #004C8C;
+  font-weight: bold;
+  font-size: 19.32px;
+}
+
+.app a {
+  margin-left: 4px;
+  text-decoration: none;
+  font-family: 'Comfortaa';
+  color: #004C8C;
+  font-weight: bold;
+  font-size: 19.32px;
+  margin-top: 0px;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 59px;
+  margin-top: -18px;
+}
+
+.icon1 {
+  background-color: #75e097bd;
+  height: 31.62px;
+  width: 30.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: -22px;
+}
+
+.img img {
+  height: 15.3px;
+  width: 14.14px;
+}
 
 
 /* footer css end */

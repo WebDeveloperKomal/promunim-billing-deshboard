@@ -201,15 +201,76 @@
 
               <img src="assets/img/Rectangle 62.png" alt="" class="india" width="25.67px" height="19.97">
 
-              <button class="log-reg-btn">
 
-                <svg width="18" height="27" viewBox="0 0 18 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13.1027 13.7877C12.5532 13.3196 12.0128 12.866 11.4815 12.4057C8.54618 9.86621 5.61088 7.32898 2.68466 4.7828C2.17536 4.33926 1.70623 3.86221 1.22025 3.39967C1.15675 3.33934 1.1075 3.26784 1.04789 3.20416C0.659109 2.79078 0.679844 2.34277 0.918297 1.88917C1.32263 1.12052 2.16888 0.767471 3.10065 0.956283C3.31189 0.998738 3.48036 1.09147 3.63328 1.21883C4.76593 2.16066 5.91413 3.08908 7.03253 4.0432C9.15527 5.85535 11.2702 7.6742 13.3723 9.50423C14.5464 10.5265 15.6933 11.5711 16.8428 12.6146C17.0657 12.8168 17.2614 13.0481 17.4363 13.2849C17.737 13.6905 17.6761 14.1128 17.3598 14.477C17.0333 14.8524 16.6613 15.2021 16.279 15.5373C13.7247 17.7673 11.1705 19.995 8.60061 22.2116C7.17378 23.4428 5.71974 24.6517 4.27089 25.8639C4.0117 26.0806 3.71622 26.265 3.4376 26.4638C2.93348 26.8258 2.38659 26.7889 1.85526 26.5465C1.20599 26.2504 0.817214 25.7801 0.752417 25.1332C0.726498 24.8773 0.832765 24.6517 1.01031 24.464C1.40816 24.0439 1.80083 23.6171 2.24015 23.2305C4.44584 21.2944 6.66448 19.3694 8.88183 17.4444C10.2465 16.2601 11.6188 15.0826 12.9874 13.9017C13.0185 13.8748 13.047 13.8424 13.1027 13.7877Z"
-                    fill="white" />
-                </svg>
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16.89" height="25.83" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                  </svg> -->
 
+
+              <!-- <a href="dashboard1.html"> -->
+              <button class="log-reg-btn" id="otp-button">
+                <img src="assets/img/left.png" alt="">
               </button>
+              <!-- </a> -->
+
+              <!-- The Modal -->
+              <div id="otpModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="otpMessage">OTP Generated Successfully: </p>
+                </div>
+              </div>
+
+
+              <style>
+                /* Modal styles */
+                .modal {
+                  display: none;
+                  /* Hidden by default */
+                  position: fixed;
+                  /* Stay in place */
+                  z-index: 1;
+                  /* Sit on top */
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  overflow: auto;
+                  /* Enable scroll if needed */
+                  background-color: rgb(0, 0, 0);
+                  /* Fallback color */
+                  background-color: rgba(0, 0, 0, 0.4);
+                  /* Black w/ opacity */
+                }
+
+                .modal-content {
+                  background-color: #fefefe;
+                  margin: 15% auto;
+                  /* 15% from the top and centered */
+                  padding: 20px;
+                  border: 1px solid #888;
+                  width: 80%;
+                  /* Could be more or less, depending on screen size */
+                }
+
+                .close {
+                  color: #aaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+                }
+
+                .close:hover,
+                .close:focus {
+                  color: black;
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+              </style>
+
+
               <img class="hero-mobile-web1" src="assets/img/Group 34.png" alt="GST billing software for PC and Mac" />
               <img class="hero-mobile-web" src="assets/img/0c49577caf3809c0fc7234f16ac79a0e.png"
                 alt="GST billing software for PC and Mac" />
@@ -788,7 +849,8 @@
           align-items: center;
           justify-content: center;
           padding: 39px 60px;
-          width: 278.7px;
+          width: 207.7px;
+          margin-left: 73px;
         }
 
         @media (max-width: 991px) {
@@ -807,7 +869,8 @@
           white-space: nowrap;
           justify-content: center;
           padding: 40px 60px;
-          width: 278.7px;
+          width: 207.7px;
+          margin-left: 73px;
         }
 
         .Compliance-6:hover {
@@ -830,7 +893,8 @@
           align-items: center;
           justify-content: center;
           padding: 39px 60px;
-          width: 278.7px;
+          width: 207.7px;
+          margin-left: 73px;
         }
 
         .Compliance-7:hover {
@@ -851,7 +915,8 @@
           margin-top: 21px;
           justify-content: center;
           padding: 39px 33px;
-          width: 334.7px;
+          width: 259.7px;
+          margin-left: 73px;
         }
 
         .Compliance-8:hover {
@@ -886,7 +951,7 @@
           flex-grow: 1;
           padding-top: 12px;
           flex-direction: column;
-          width: 152%;
+          width: 140%;
           margin-left: -308px;
         }
 
@@ -1188,7 +1253,7 @@
             display: flex;
             width: 100%;
             gap: 20px;
-            font-size: 20px;
+            font-size: 18px;
             color: #151515;
             font-weight: 600;
             line-height: 28px;
@@ -1206,6 +1271,7 @@
             gap: 20px;
             justify-content: space-between;
             flex: -2;
+            margin-left: 65px;
           }
 
           .customers-img {
@@ -1226,14 +1292,14 @@
             width: 32px;
             height: 39px;
             border-radius: 10px;
-            margin-left: -91px;
+            margin-left: -85px;
             margin-top: 10px;
           }
 
           .customers-6 {
             font-family: 'Comfortaa';
             margin: auto 0;
-            margin-left: 18px;
+            margin-left: 8px;
 
           }
 
@@ -1242,6 +1308,7 @@
             gap: 20px;
             justify-content: space-between;
             flex: 1;
+            margin-left: -7px;
           }
 
           .customers-8 {
@@ -1309,6 +1376,7 @@
             display: flex;
             gap: 20px;
             justify-content: space-between;
+            margin-left: 65px;
           }
 
           .customers-img2 {
@@ -1318,7 +1386,7 @@
             width: 38.85px;
             height: 39px;
             border-radius: 10px;
-            margin-left: -94px;
+            margin-left: -76px;
             margin-top: 10px;
           }
 
@@ -1328,7 +1396,8 @@
             margin: auto 0;
             font-weight: 700;
             line-height: 1.5;
-            font-size: 20px;
+            font-size: 18px;
+            margin-left: 14px;
           }
 
           .customers-14 {
@@ -1336,6 +1405,7 @@
             margin-top: 139px;
             gap: 20px;
             justify-content: space-between;
+            margin-left: 61px;
           }
 
           @media (max-width: 991px) {
@@ -1351,7 +1421,7 @@
             width: 44.02px;
             height: 35.86px;
             border-radius: 10px;
-            margin-left: -90px;
+            margin-left: -74px;
             margin-top: 16px;
           }
 
@@ -1361,7 +1431,8 @@
             width: 487px;
             font-weight: 700;
             line-height: 1.5;
-            font-size: 20px;
+            font-size: 18px;
+            margin-left: 13px;
           }
 
           .column-3 {
@@ -1382,7 +1453,7 @@
             display: flex;
             flex-grow: 1;
             flex-direction: column;
-            font-size: 20px;
+            font-size: 18px;
             color: #151515;
             font-weight: 600;
             line-height: 28px;
@@ -1398,6 +1469,7 @@
             display: flex;
             gap: 20px;
             justify-content: space-between;
+            margin-left: -5px;
           }
 
           .customers-img4 {
@@ -1407,7 +1479,7 @@
             width: 38.88px;
             height: 39.01px;
             border-radius: 10px;
-            margin-left: -94px;
+            margin-left: -85px;
             margin-top: 10px;
           }
 
@@ -1422,6 +1494,7 @@
             margin-top: 139px;
             gap: 20px;
             justify-content: space-between;
+            margin-left: -8px;
           }
 
           @media (max-width: 991px) {
@@ -1465,10 +1538,12 @@
             display: flex;
             flex-grow: 1;
             flex-direction: column;
-            font-size: 20px;
+            font-size: 18px;
             color: #151515;
             font-weight: 600;
             line-height: 28px;
+            margin-left: 6px;
+            margin-left: -21px;
           }
 
           @media (max-width: 991px) {
@@ -1481,12 +1556,13 @@
             display: flex;
             gap: 20px;
             justify-content: space-between;
+            margin-left: -33px;
           }
 
           .customers-23 {
             font-family: Comfortaa, sans-serif;
             margin: auto 0;
-            width: 218px;
+            width: 255px;
           }
 
           .customers-24 {
@@ -1494,6 +1570,7 @@
             margin-top: 140px;
             gap: 20px;
             justify-content: space-between;
+            margin-left: -28px;
           }
 
           @media (max-width: 991px) {
@@ -1516,7 +1593,7 @@
           .customers-25 {
             font-family: 'Comfortaa';
             margin: auto 0;
-            width: 221px;
+            width: 250px;
           }
 
           .customers-26 {
@@ -1524,6 +1601,7 @@
             margin-top: 139px;
             gap: 20px;
             justify-content: space-between;
+            margin-left: -30px;
           }
 
           @media (max-width: 991px) {
@@ -1536,7 +1614,7 @@
             aspect-ratio: 0.98;
             object-fit: auto;
             object-position: center;
-            margin-left: -85px;
+            margin-left: -81px;
             width: 38.88px;
             height: 39.01px;
             margin-top: 9px;
@@ -1546,7 +1624,7 @@
           .customers-27 {
             font-family: 'Comfortaa';
             margin: auto 0;
-            width: 215px;
+            width: 252px;
           }
         </style>
 
@@ -1671,8 +1749,9 @@
           align-items: center;
           justify-content: center;
           padding: 39px 60px;
-          width: 624px;
+          width: 499px;
           margin-top: 25px;
+          margin-left: 65px;
         }
 
         @media (max-width: 991px) {
@@ -1690,7 +1769,8 @@
           white-space: nowrap;
           justify-content: center;
           padding: 40px 60px;
-          width: 624px;
+          width: 499px;
+          margin-left: 65px;
         }
 
         @media (max-width: 991px) {
@@ -1708,7 +1788,8 @@
           align-items: center;
           justify-content: center;
           padding: 39px 60px;
-          width: 624px;
+          width: 499px;
+          margin-left: 65px;
         }
 
         @media (max-width: 991px) {
@@ -1724,7 +1805,8 @@
           margin-top: 21px;
           justify-content: center;
           padding: 39px 33px;
-          width: 678px;
+          width: 555px;
+          margin-left: 65px;
         }
 
         @media (max-width: 991px) {
@@ -1741,7 +1823,8 @@
           margin-top: 21px;
           justify-content: center;
           padding: 39px 33px;
-          width: 678px;
+          width: 555px;
+          margin-left: 65px;
         }
 
         @media (max-width: 991px) {
@@ -1757,7 +1840,8 @@
           margin-top: 21px;
           justify-content: center;
           padding: 39px 33px;
-          width: 678px;
+          width: 555px;
+          margin-left: 65px;
         }
 
         @media (max-width: 991px) {
@@ -1773,7 +1857,8 @@
           margin-top: 21px;
           justify-content: center;
           padding: 39px 33px;
-          width: 678px;
+          width: 555px;
+          margin-left: 65px;
         }
 
         @media (max-width: 991px) {
@@ -1789,7 +1874,8 @@
           margin-top: 21px;
           justify-content: center;
           padding: 39px 33px;
-          width: 678px;
+          width: 555px;
+          margin-left: 65px;
         }
 
         @media (max-width: 991px) {
@@ -1805,7 +1891,8 @@
           margin-top: 21px;
           justify-content: center;
           padding: 39px 33px;
-          width: 678px;
+          width: 555px;
+          margin-left: 65px;
         }
 
         @media (max-width: 991px) {
@@ -1821,7 +1908,8 @@
           margin-top: 21px;
           justify-content: center;
           padding: 39px 33px;
-          width: 678px;
+          width: 555px;
+          margin-left: 65px;
         }
 
         @media (max-width: 991px) {
@@ -2125,13 +2213,13 @@
 
         .card-11 {
           display: flex;
-          width: 153%;
+          width: 149%;
           gap: 20px;
           font-size: 20px;
           color: #151515;
           font-weight: 600;
           line-height: 28px;
-          padding-left: 36px;
+          padding-left: 2px;
         }
 
         .card-12 {
@@ -2613,7 +2701,7 @@
 
       <!-- footer start -->
 
-      <!-- <section id="super-power" class="section-container super-power-section1">
+      <section id="super-power" class="section-container super-power-section1">
         <div class="super-power-container">
           <div class="super-power-container-header-container">
           </div>
@@ -2624,7 +2712,7 @@
             <img src="assets/img/Layer_11.png" alt="Logo" class="footer-logo">
             <img src="assets/img/Rectangle.png" alt="Logo" class="footer-img">
           </div>
-          <div class="footer-section">
+          <div class="footer-section1">
             <h4 class="menu">Menu</h4>
             <ul>
               <li><a href="#">Features</a></li><br>
@@ -2632,10 +2720,70 @@
               <li><a href="#">Knowledge Center</a></li><br>
             </ul>
           </div>
-        </div>
-      </section> -->
+          <div class="footer-section2">
+            <h4 class="software">Software</h4>
+            <ul>
+              <li><a href="#">Invoicing Software</a></li><br>
+              <li><a href="#">Inventory Management Software</a></li><br>
+              <li><a href="#">Retail POS Software</a></li><br>
+              <li><a href="#">Accounting Software</a></li><br>
+              <li><a href="#">Billing Software for PC</a></li><br>
+              <li><a href="#">Offline Billing Software</a></li><br>
+              <li><a href="#">E-Invoicing Software</a></li><br>
+              <li><a href="#">e-Way Bills Software</a></li><br>
+            </ul>
+          </div>
 
+          <div class="footer-section3">
+            <div class="contact-cards">
+              <!-- Card 1 -->
+              <div class="contact-card">
+                <p class="cdh1">Get In Touch</p>
+                <div class="location">
+                  <img src="assets/img/Group00.png" class="locationimg" height="28.99px" width="28.99px">
+                  <p class="address">No 13, S, IBG House Sharv Plaza, 295, Manjri Road, Hadapsar, Pune,
+                    Maharashtra 411028</p>
+                </div>
+              </div><br>
+
+              <!-- Card 2 -->
+              <div class="contact-card">
+                <div class="contact">
+                  <div class="cimgs" style="display: block; margin-right: 20px;">
+                    <img src="assets/img/Group (1).png" height="28.99px" width="28.99px" alt=""><br><br>
+                    <img src="assets/img/Vector 22.png" height="29.99px" width="28.99px" alt="">
+                  </div>
+                  <p>Toll Free Number : <span style="color: #004C8C;">18002661294</span><br>
+                    Phone Number : <span style="color: #004C8C;">020 67491919</span><br>
+                    Mail ID : <span style="color: #004C8C;">Connect@ProMunim.com</span></p>
+                </div>
+              </div><br><br>
+
+
+              <div class="icon">
+                <p>Connect with Us</p>
+                <div class="icon1"><img src="assets/img/fb.png" alt=""></div>
+                <div class="icon1"><img src="assets/img/instra.png" alt=""></div>
+                <div class="icon1"><img src="assets/img/google.png" alt=""></div>
+                <div class="icon1"><img src="assets/img/utube.png" alt=""></div>
+                <div class="icon1"><img src="assets/img/linkedin.png" alt=""></div>
+              </div><br>
+
+              <div class="app">
+                <a class="download" href="#">Download App</a>
+                <img src="assets/img/pngegg-01.png" alt="">
+                <img src="assets/img/pngegg-02 (1).png" alt="">
+              </div>
+
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>Copyright © 2022 ProMunim. All Rights Reserved.</p>
+          </div>
+        </div>
+      </section>
       <!-- footer end -->
+
 
       <div class="login-backdrop d-none-imp" id="login_backdrop_id"></div>
       <div id="login_container_id" class="login animate__animated animate__fadeInRightBig animate__faster d-none-imp">
@@ -2702,6 +2850,42 @@
             faqItem.classList.toggle('active');
           });
         });
+      </script>
+
+      <script>
+        document.getElementById('otp-button').addEventListener('click', function () {
+          // Generate OTP
+          const otp = Math.floor(100000 + Math.random() * 900000); // Generates a 6-digit OTP
+
+          // Display OTP in the modal
+          document.getElementById('otpMessage').innerText = `OTP Generated Successfully: ${otp}`;
+
+          // Show the modal
+          var modal = document.getElementById('otpModal');
+          modal.style.display = "block";
+
+          // Redirect to dashboard1.html after 3 seconds
+          setTimeout(function () {
+            window.location.href = 'dashboard1.html';
+          }, 3000);
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+          var modal = document.getElementById('otpModal');
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          var modal = document.getElementById('otpModal');
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
       </script>
 
 </body>
