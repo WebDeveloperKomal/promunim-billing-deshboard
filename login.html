@@ -21,6 +21,7 @@
                     <h2>Login / Register</h2>
                     <div class="login-method">
                         <div class="phone-login">
+
                             <div class="phone-input-container">
                                 <div class="form-group">
                                     <input type="text" id="form_name1" name="form_name1" required pattern="^[0-9]{10}$"
@@ -28,16 +29,16 @@
                                     <label for="form_name1"><img src="assets/img/Rectangle 62.png" alt="icon"> Phone
                                         Number<span class="gl-form-asterisk"></span></label>
                                 </div>
-                                <button class="get-otp" id="otp-button">Get
-                                    OTP</button>
-                            </div>
 
+                                <button class="get-otp" id="otp-button">Get OTP</button>
+                            </div>
 
                             <!-- The Modal -->
                             <div id="otpModal" class="modal">
                                 <div class="modal-content">
                                     <span class="close">&times;</span>
-                                    <p id="otpMessage">OTP Generated Successfully: </p>
+                                    <p>OTP generated successfully!</p>
+                                    <button id="ok-button">OK</button>
                                 </div>
                             </div>
 
@@ -82,32 +83,32 @@
 
 
         <script>
-            document.getElementById('otp-button').addEventListener('click', function () {
-                // Generate OTP
-                const otp = Math.floor(100000 + Math.random() * 900000); // Generates a 6-digit OTP
-                // Display OTP in the modal
-                document.getElementById('otpMessage').innerText = `OTP Generated Successfully: ${otp}`;
-                // Show the modal
-                var modal = document.getElementById('otpModal');
-                modal.style.display = "block";
-                // Redirect to dashboard1.html after 3 seconds
-                setTimeout(function () {
-                    window.location.href = 'dashboard1.html';
-                }, 3000);
-            });
+            // Get elements
+            var otpButton = document.getElementById('otp-button');
+            var modal = document.getElementById('otpModal');
+            var closeModal = document.getElementsByClassName('close')[0];
+            var okButton = document.getElementById('ok-button');
 
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-                var modal = document.getElementById('otpModal');
-                modal.style.display = "none";
+            // When the user clicks the button, open the modal
+            otpButton.onclick = function () {
+                // Assuming OTP generation is done here
+                modal.style.display = 'block';
             }
+
+            // When the user clicks on <span> (x), close the modal
+            closeModal.onclick = function () {
+                modal.style.display = 'none';
+            }
+
+            // When the user clicks the OK button, redirect to dashboard1.html
+            okButton.onclick = function () {
+                window.location.href = 'dashboard1.html';
+            }
+
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function (event) {
-                var modal = document.getElementById('otpModal');
                 if (event.target == modal) {
-                    modal.style.display = "none";
+                    modal.style.display = 'none';
                 }
             }
         </script>
