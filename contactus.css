@@ -270,6 +270,18 @@ p {
     margin-left: -20px;
 }
 
+/* .cross {
+    width: 13px;
+    height: 12px;
+    padding-left: 500px;
+    margin-top: -59px;
+    position: absolute;
+} */
+
+.mt-5 {
+    margin-top: 1rem !important;
+}
+
 @media (max-width: 768px) {
 
     /* Adjust padding and margin for smaller screens */
