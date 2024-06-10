@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- ----- -->
 <html lang="en">
 
 <head>
@@ -23,7 +22,6 @@
                     <h2>Login / Register</h2>
                     <div class="login-method">
                         <div class="phone-login">
-
                             <div class="phone-input-container">
                                 <div class="form-group">
                                     <input type="text" id="form_name1" name="form_name1" required pattern="^[0-9]{10}$"
@@ -74,13 +72,11 @@
 
         <script>
             function getotp() {
-                // Generate OTP logic here
-                var otp = "123456"; // For demonstration purposes, replace with actual OTP generation logic
-
-                // Show alert with OTP
+                // Generate a random 6-digit OTP
+                var otp = Math.floor(100000 + Math.random() * 900000).toString();
+                // Show alert with OTP  
                 var otpAlert = "OTP Generated Successfully: " + otp;
                 alert(otpAlert);
-
                 // Redirect after user clicks OK
                 window.location.href = 'dashboard1.html';
             }

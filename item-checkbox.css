@@ -27,6 +27,12 @@ h4,
 h5,
 h6 {
     font-family: 'Comfortaa';
+
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -39,8 +45,9 @@ h6 {
     margin-left: 10px;
     border-radius: 10px;
     background-color: rgba(0, 76, 140, 0.17);
-    height: 1090px;
-    width: 1028px;
+    height: 1300px;
+    width: 81%;
+    margin-left: 86px;
     /* background-color: #004C8C; */
 }
 
@@ -50,7 +57,6 @@ h6 {
     }
 }
 
-
 /*--------------------------------------------------------------
 # Page Title
 --------------------------------------------------------------*/
@@ -59,27 +65,26 @@ h6 {
 }
 
 .pagetitle h1 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 0;
     font-weight: 600;
     color: #004C8C;
     font-family: 'Comfortaa';
-    margin-left: 4px;
+    margin-left: 8px;
 }
-
 
 /*--------------------------------------------------------------
 # Override some default Bootstrap stylings
 --------------------------------------------------------------*/
 /* Dropdown menus */
 .dropdown-menu {
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 10px 0;
     animation-name: dropdown-animate;
     animation-duration: 0.2s;
     animation-fill-mode: both;
     border: 0;
-    box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
+    /* box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2); */
 }
 
 .dropdown-menu .dropdown-header,
@@ -98,20 +103,20 @@ h6 {
     text-decoration: none;
 }
 
-/* .dropdown-menu .dropdown-divider {
-    color: #a5c5fe;
+.dropdown-menu .dropdown-divider {
+    /* color: #a5c5fe; */
     margin: 0;
-} */
+}
 
 .dropdown-menu .dropdown-item {
     font-size: 12px;
-    padding: 10px 15px;
+    padding: 3px 10px;
     transition: 0.3s;
 }
 
 .dropdown-menu .dropdown-item i {
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 0;
 }
 
@@ -184,15 +189,6 @@ h6 {
     border-color: #d3d3d4;
 }
 
-/* Card */
-.card {
-    margin-bottom: 30px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-    border-radius: 10px;
-    border-color: #3BB161;
-}
 
 .card-header,
 .card-footer {
@@ -202,25 +198,6 @@ h6 {
     padding: 15px;
 }
 
-.card-title {
-    padding: 20px 0 15px 0;
-    font-size: 12px;
-    font-weight: 500;
-    color: black;
-    font-family: 'Comfortaa';
-    margin-top: -10px;
-}
-
-.card-title i {
-    color: #3BB161;
-}
-
-.card-title span {
-    color: #899bbd;
-    font-size: 14px;
-    font-weight: 400;
-}
-
 .card-body {
     padding: 0 20px 20px 20px;
 }
@@ -228,7 +205,6 @@ h6 {
 .card-img-overlay {
     background-color: rgba(255, 255, 255, 0.6);
 }
-
 
 /* Close Button */
 .btn-close {
@@ -256,8 +232,9 @@ h6 {
 }
 
 .logo img {
-    max-height: 42px;
+    max-height: 47px;
     margin-right: 6px;
+    margin-left: -7px;
 }
 
 .logo span {
@@ -271,9 +248,9 @@ h6 {
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
-.main {
+/* .main {
     margin-left: -8px;
-}
+} */
 
 .hero {
     margin-top: 10px;
@@ -284,16 +261,18 @@ h6 {
     top: 11px;
     left: 0;
     bottom: 0;
-    width: 298px;
+    width: 238px;
+    /* height: 1006px; */
     z-index: 996;
     transition: all 0.3s;
     padding: 20px;
     overflow-y: auto;
-    scrollbar-width: thin;
+    /* scrollbar-width: thin; */
     scrollbar-color: #aab7cf transparent;
     box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
     background-color: #3bb161;
-    border-radius: 12px;
+    border-radius: 10px;
+
 }
 
 /* @media (max-width: 1199px) {
@@ -302,7 +281,7 @@ h6 {
   }
 } */
 
-.sidebar::-webkit-scrollbar {
+/* .sidebar::-webkit-scrollbar {
     width: 5px;
     height: 8px;
     background-color: #fff;
@@ -310,13 +289,13 @@ h6 {
 
 .sidebar::-webkit-scrollbar-thumb {
     background-color: #aab7cf;
-}
+} */
 
 @media (min-width: 1200px) {
 
     #main,
     #footer {
-        margin-left: 308px;
+        margin-left: 247px;
     }
 }
 
@@ -343,7 +322,7 @@ h6 {
     margin: 0;
     margin-top: 69px;
     list-style: none;
-    margin-left: -10px;
+    margin-left: -25px;
 }
 
 .sidebar-nav li {
@@ -362,14 +341,12 @@ h6 {
     color: #004C8C;
     font-weight: 600;
     margin: 10px 0 5px 15px;
-
 }
 
 .sidebar-nav .nav-link {
     display: flex;
     align-items: center;
-    font-size: 15px;
-    /* font-weight: 600; */
+    font-size: 14px;
     color: #FFFFFF;
     transition: 0.3;
     background: #3bb161;
@@ -400,12 +377,16 @@ h6 {
 .sidebar-nav .nav-link:hover {
     color: white;
     background: #2F9D6A;
-    border-radius: 13px;
+    border-radius: 10px;
+    margin-left: 10px;
+    /* width: 235px;*/
+    /* height: 36px;  */
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
     margin-right: 0;
     transition: transform 0.2s ease-in-out;
+    margin-left: 10px;
 }
 
 .sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
@@ -433,53 +414,90 @@ h6 {
 .sidebar-nav .nav-content a:hover {
     background-color: #2F9D6A;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
+    width: 180px;
 }
 
 /*--------------------------------------------------------------
 # Dashboard
 --------------------------------------------------------------*/
 
+
+#dropdownMenuButton1 {
+    width: 186px;
+    height: 33px;
+    background-color: white;
+    margin-top: 10px;
+    color: #636363;
+    margin-left: 52px;
+    text-align: left;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+#dropdownMenuButton2 {
+    width: 137px;
+    height: 33px;
+    background-color: white;
+    margin-top: -58px;
+    color: #636363;
+    margin-left: 806px;
+    text-align: left;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+#dropdownMenuButton1:hover {
+    background-color: #3BB161;
+    color: white;
+}
+
+.btn-light img {
+    margin-left: -10px;
+}
+
+.btn-second3 {
+    width: 291px;
+    background-color: white;
+    padding: 1px 14px;
+    margin-top: -31px;
+    color: #636363;
+    margin-left: 12px;
+    text-align: left;
+    font-size: 12px;
+    border-radius: 10px;
+    height: 31px;
+    border: none;
+    position: absolute;
+}
+
+.btn-second3:hover {
+    background-color: #3BB161;
+    color: white;
+}
+
+.second-btn3 img {
+    margin-top: -20px;
+    margin-left: 278px;
+    position: absolute;
+}
+
 /* Info Cards */
-.dashboard .info-card {
-    padding-bottom: 10px;
-    border-radius: 15px;
-    margin-left: -11px;
-    width: 501px;
-    height: 76px;
-    border: 1px solid rgb(139, 136, 136);
-    margin-top: 5px;
-}
-
-.dashboard .info-card h6 {
-    font-size: 28px;
-    color: #012970;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-}
-
-.dashboard .card-icon {
-    font-size: 32px;
-    line-height: 0;
-    width: 64px;
-    height: 64px;
-    flex-shrink: 0;
-    flex-grow: 0;
-}
-
-.dashboard .revenue-card .card-icon {
-    color: #2eca6a;
-    background: #e0f8e9;
+.table {
+    margin-left: -8px;
+    width: 101%;
+    margin-top: 10px;
 }
 
 /* Recent Sales */
 .dashboard .recent-sales {
     font-size: 14px;
-    margin-left: -7px;
-    width: 102%;
-    margin-top: -15px;
-    border: 1px solid rgb(153, 149, 149);
+    margin-left: -5px;
+    width: 101%;
+    height: 654px;
+    margin-top: -11px;
+    border: 1px solid rgb(205, 201, 201);
+    border-radius: 10px;
 }
 
 .dashboard .recent-sales .table thead {
@@ -499,13 +517,26 @@ h6 {
     padding: 10px 0 0 0;
 }
 
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    font-size: 12px;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
 .logo img {
-    max-height: 36px;
+    max-height: 47px;
     margin-right: 6px;
+    margin-left: -7px;
 }
 
 .logo span {
@@ -513,7 +544,7 @@ h6 {
     font-weight: 700;
     color: #fff;
     margin-top: -14px;
-    margin-left: 52px;
+    margin-left: 41px;
     font-family: 'Comfortaa';
     position: absolute;
 }
@@ -523,25 +554,24 @@ h6 {
     font-weight: 700;
     color: #012970;
     margin-top: 48px;
-    margin-left: 51px;
+    margin-left: 41px;
     font-family: 'Comfortaa';
     position: absolute;
 }
-
 
 /* Style the button */
 .dropbtn {
     background-color: white;
     color: #000;
     padding: 16px;
-    font-size: 16px;
+    font-size: 12px;
     border: none;
     cursor: pointer;
     margin-top: 44px;
-    margin-left: 2px;
+    margin-left: -10px;
     border-radius: 10px;
-    width: 243px;
-    height: 40px;
+    width: 201px;
+    height: 30px;
 }
 
 /* Dropdown content (hidden by default) */
@@ -574,29 +604,35 @@ h6 {
     display: block;
 }
 
-
 .img-img img {
     color: #004C8C;
-    width: 16px;
-    margin-top: 54px;
-    margin-left: 13px;
+    width: 10px;
+    margin-top: 55px;
+    margin-left: -1px;
     position: absolute;
 }
 
 .img-img-line img {
-    width: 20px;
-    margin-top: 55px;
-    margin-left: 216px;
+    width: 12px;
+    margin-top: 53px;
+    margin-left: 161px;
     position: absolute;
+    height: 16px;
+}
 
+.img-img1 {
+    width: 50px;
+    height: 30px;
+    margin-top: -31px;
+    position: absolute;
+    margin-left: 142px;
 }
 
 .dropbtn p {
-    margin-top: -8px;
-    margin-left: -9px;
+    margin-top: -9px;
+    margin-left: -25px;
     font-family: 'Comfortaa';
     color: #004C8C;
-
 }
 
 .para p {
@@ -605,7 +641,7 @@ h6 {
     color: #004C8C;
     padding: 10px;
     margin-top: 10px;
-    margin-left: -7px;
+    margin-left: -18px;
     font-weight: bold;
     position: absolute;
 }
@@ -632,7 +668,7 @@ h6 {
     width: 322px;
     height: 180px;
     margin-top: 100px;
-    margin-left: -34px;
+    margin-left: -18px;
     border-radius: 12px;
 }
 
@@ -692,9 +728,7 @@ h6 {
     margin-left: 10px;
 }
 
-
 /* ------------------------------------------------------------------------- */
-
 
 
 .sidebar h6 {
@@ -703,10 +737,10 @@ h6 {
     margin-top: -14px;
 }
 
-
 .dashboard .info-card {
     padding-bottom: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
+    height: 76px;
 }
 
 hr {
@@ -717,16 +751,13 @@ hr {
 .col-12 .card-body {
     height: 703px;
     border-color: black;
-    border-radius: 20px;
-
+    border-radius: 10px;
 }
 
 .col-12 {
     margin-top: -26px;
     margin-left: 10px;
-
 }
-
 
 .btn-light {
     color: #004C8C;
@@ -763,7 +794,7 @@ hr {
 .btn-margin-left {
     width: 137px;
     height: 37px;
-    margin-left: 760px;
+    margin-left: 815px;
     background-color: #3BB161;
     color: white;
     border: none;
@@ -825,10 +856,7 @@ hr {
 
 .custom-border1 {
     border: 1px solid rgb(134, 132, 132);
-
 }
-
-
 
 /* ---------------button------------- */
 
@@ -836,7 +864,6 @@ hr {
     width: 32px;
     height: 32px;
     background-color: #004C8C;
-
 }
 
 .test .image1 {
@@ -845,7 +872,7 @@ hr {
 
 .box1 {
     background-color: rgba(59, 177, 97, 0.15);
-    width: 1013px;
+    width: 1063px;
     height: 159px;
     margin-left: -20px;
 }
@@ -856,7 +883,7 @@ hr {
 
 .box2 {
     margin-top: 20px;
-    margin-left: -225px;
+    margin-left: -266px;
 }
 
 .text1 {
@@ -885,7 +912,6 @@ hr {
 
 .d-grid .btn-primary:hover {
     background-color: none;
-
 }
 
 .btn-primary img {
@@ -927,22 +953,22 @@ hr {
     height: 20px;
 }
 
-
 /* -------------------------------------------------------------- */
 
 .dropdown-menu {
-    width: 200px;
+    width: 186px;
+    height: 145px;
 }
 
 .col-md-2 .btn-primary {
     width: 219px;
     height: 33px;
-    margin-top: -25px;
+    margin-top: 10px;
     background-color: white;
     color: black;
     border: 1px solid rgb(175, 170, 170);
     border-radius: 10px;
-    margin-left: 1px;
+    margin-left: 5px;
     font-size: 12px;
 }
 
@@ -961,8 +987,8 @@ hr {
 .col-md-2 .btn-danger {
     width: 145px;
     height: 33px;
-    margin-top: -28px;
-    margin-left: 81px;
+    margin-top: 10px;
+    margin-left: 67px;
     background-color: white;
     color: black;
     border: 1px solid rgb(175, 170, 170);
@@ -991,9 +1017,11 @@ hr {
     border: none;
     color: white;
     border-radius: 10px;
-    width: 128px;
-    height: 25px;
-    font-size: 12px;
+    width: 119px;
+    height: 27px;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 6px;
 }
 
 .dropdown-menu .btn-dark {
@@ -1009,8 +1037,8 @@ hr {
 }
 
 .btn-info {
-    margin-top: -78px;
-    margin-left: 755px;
+    margin-top: -60px;
+    margin-left: 804px;
     background-color: white;
     border: 1px solid rgb(173, 170, 170);
     border-radius: 10px;
@@ -1019,9 +1047,14 @@ hr {
     font-size: 12px;
 }
 
+.btn-info:hover {
+    background-color: #3BB161;
+    border: none;
+}
+
 .btn-success {
-    margin-top: -123px;
-    margin-left: 901px;
+    margin-top: -109px;
+    margin-left: 952px;
     width: 115px;
     height: 33px;
     background-color: #3BB161;
@@ -1031,13 +1064,10 @@ hr {
 
 .col-xxl-6 {
     width: 49%;
-    margin-left: 10px;
+    margin-left: 7px;
 }
 
-
 /* model  */
-
-
 
 .modal-content {
     position: relative;
@@ -1060,18 +1090,21 @@ hr {
     margin-top: -16px;
 }
 
-
 .modal-title {
     text-align: center;
     margin-left: 255px;
+    font-size: 18px;
 }
 
 #moal {
     margin-top: 50px;
     margin-left: 200px;
-    width: 140px;
+    width: 115px;
+    height: 37px;
     background-color: none;
     border: 1px solid black;
+    font-size: 14px;
+    border-radius: 10px;
 }
 
 #moal:hover {
@@ -1081,11 +1114,12 @@ hr {
 .btn-dark {
     margin-top: 50px;
     margin-left: 40px;
-    width: 140px;
+    width: 115px;
+    height: 37px;
     background-color: #3BB161;
     border: none;
     border-radius: 10px;
-
+    font-size: 14px;
 }
 
 .btn-dark:hover {
@@ -1116,4 +1150,90 @@ hr {
     border-color: rgb(59, 177, 97);
     height: 15px;
     width: 15px;
+}
+
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    color: var(--bs-card-title-color);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.form-label {
+    margin-bottom: .5rem;
+    font-size: 12px;
+}
+
+.form-control {
+    font-size: 12px;
+}
+
+/* ------bulk action dropdown css */
+#drop {
+    width: 234px;
+    height: 175px;
+    border-radius: 10px;
+    border: 1px solid rgb(151, 146, 146);
+}
+
+#drop1 {
+    font-size: 12px;
+    margin-top: -8px;
+}
+
+.p1 {
+    font-size: 7px;
+    margin-left: 38px;
+    margin-top: 2px;
+}
+
+#p2 {
+    margin-left: 30px;
+    font-size: 9px;
+    margin-top: -10px;
+}
+
+#p3 {
+    margin-left: 30px;
+    font-size: 9px;
+    margin-top: -10px;
+}
+
+#p4 {
+    margin-left: 30px;
+    font-size: 9px;
+    margin-top: -10px;
+}
+
+#p5 {
+    margin-left: 30px;
+    font-size: 9px;
+    margin-top: -10px;
+}
+
+.h1 {
+    margin-top: 1px;
+}
+
+.table th {
+    font-size: 12px;
+}
+
+.dropdown-menu.show {
+    display: block;
+    width: 186px;
+    height: 145px;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 12px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.bi-search {
+    margin-left: -90px;
 }
