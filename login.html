@@ -29,7 +29,6 @@
                                     <label for="form_name1"><img src="assets/img/Rectangle 62.png" alt="icon"> Phone
                                         Number<span class="gl-form-asterisk"></span></label>
                                 </div>
-
                                 <button class="get-otp" id="otp-button">Get OTP</button>
                             </div>
 
@@ -88,23 +87,19 @@
             var modal = document.getElementById('otpModal');
             var closeModal = document.getElementsByClassName('close')[0];
             var okButton = document.getElementById('ok-button');
-
             // When the user clicks the button, open the modal
             otpButton.onclick = function () {
                 // Assuming OTP generation is done here
                 modal.style.display = 'block';
             }
-
             // When the user clicks on <span> (x), close the modal
             closeModal.onclick = function () {
                 modal.style.display = 'none';
             }
-
             // When the user clicks the OK button, redirect to dashboard1.html
             okButton.onclick = function () {
                 window.location.href = 'dashboard1.html';
             }
-
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function (event) {
                 if (event.target == modal) {

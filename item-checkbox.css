@@ -1084,6 +1084,7 @@ hr {
     border-radius: var(--bs-modal-border-radius);
     outline: 0;
     font-family: 'Comfortaa';
+    left: 10%;
 }
 
 .modal-header .btn-close {
@@ -1130,7 +1131,7 @@ hr {
     margin-top: -5px;
 }
 
-.form-check-input[type=checkbox] {
+.form-check-input[type=checkbox1] {
     border-radius: .25em;
     margin-left: 0px;
     border-color: #3BB161;
@@ -1236,4 +1237,260 @@ h4 {
 
 .bi-search {
     margin-left: -90px;
+}
+
+
+
+/* ------------------------------------------ */
+.modal-dialog {
+    max-width: 996px;
+    width: 1096px;
+    margin: 30px auto;
+    /* Adjust margin as needed */
+}
+
+#model1 {
+    height: 600px;
+    overflow-y: auto;
+    width: 1100px;
+}
+
+
+.box3 {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(180, 173, 173);
+}
+
+.box4 {
+    border: 1px solid rgb(180, 173, 173);
+    width: 650px;
+    height: 400px;
+    margin-left: 325px;
+    border-radius: 15px;
+}
+
+.modal-title1 {
+    margin-left: 500px;
+}
+
+.box5 {
+    width: 260px;
+    height: 60px;
+    background-color: rgba(59, 177, 97, 0.15);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: -10px;
+    color: #004C8C;
+}
+
+.box5 p {
+    margin-left: 80px;
+    margin-top: -18px;
+    font-size: 16px;
+}
+
+.box5 img {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.line {
+    margin-left: -25px;
+    width: 296px;
+    margin-top: 10px;
+}
+
+.box3 h6 {
+    margin-left: 70px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.text11 {
+    margin-left: 70px;
+    width: 200px;
+}
+
+.text11 p {
+    margin-top: -19px;
+    color: black;
+    font-size: 12px;
+}
+
+.text11 img {
+    margin-left: -32px;
+    margin-top: 6px;
+}
+
+label {
+    width: 200px;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+#radio {
+    margin-top: -10px;
+}
+
+.form-group {
+    width: 290px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+#form {
+    margin-left: 245px;
+}
+
+.form-check-label {
+    margin-left: 208px;
+    margin-top: 60px;
+    width: 214px;
+}
+
+#flexSwitchCheckChecked {
+    margin-left: 450px;
+    margin-top: -22px;
+}
+
+#form1 {
+    margin-left: 245px;
+    margin-top: 30px;
+}
+
+
+#form2 {
+    margin-left: 245px;
+    margin-top: 7px;
+}
+
+#form3 {
+    margin-left: 245px;
+    margin-top: 27px;
+}
+
+#b2 {
+    width: 115px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    height: 37px;
+    font-size: 14px;
+}
+
+#b3 {
+    width: 115px;
+    background-color: #3BB161;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 37px;
+    font-size: 14px;
+}
+
+.table th {
+    font-size: 12px;
+}
+
+.dropdown-menu.show {
+    display: block;
+    width: 186px;
+    height: 145px;
+    border-radius: 10px;
+}
+
+.form-select {
+    width: 293px;
+    height: 33px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+#select1 {
+    margin-left: 243px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+/* @media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 11%;
+    }
+} */
+
+/* ---------------------- */
+
+
+.text12 {
+    margin-left: 70px;
+    width: 200px;
+    font-size: 12px;
+    margin-top: 25px;
+    line-height: 3;
+}
+
+.text12 p {
+    margin-top: -19px;
+    color: black;
+}
+
+/* .text12 p:hover {
+    background-color: rgba(59, 177, 97, 0.15);
+    width: 258px;
+    height: 32px;
+    border-radius: 10px;
+    margin-left: -50px;
+} */
+
+#select2 {
+    margin-left: 243px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+#modal-content3 {
+    width: 996px;
+    height: 500px;
+}
+
+.text13 {
+    margin-left: 70px;
+    width: 200px;
+    font-size: 12px;
+    margin-top: 25px;
+    line-height: 3;
+}
+
+.text13 p {
+    margin-top: -19px;
+    color: black;
+}
+
+/* .text13 p:hover {
+    background-color: #3BB161;
+} */
+
+#form4 {
+    margin-top: -11px;
+    margin-left: -1px;
+    width: 606px;
+    height: 51px;
+}
+
+.modal-title2 {
+    margin-left: 471px;
+}
+
+.team {
+    width: 200px;
+    color: #004C8C;
+    margin-left: 10px;
+    font-size: 12px;
 }

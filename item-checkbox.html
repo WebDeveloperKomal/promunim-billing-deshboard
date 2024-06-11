@@ -384,7 +384,6 @@
                                                 class="icon2"></a>
                                         <a class="dropdown-item" href="#">B<img src="assets/img/Group (2).png" alt=""
                                                 class="icon3"></a>
-
                                         <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                             data-bs-target="#createCategoryModal">Add
                                             Category</button>
@@ -460,10 +459,344 @@
                             </div>
 
                             <div class="button">
-                                <button type="button" class="btn btn-success">Create Item</button>
+                                <button type="button" class="btn btn-success" data-toggle="modal"
+                                    data-target="#productModal">Create Item</button>
                             </div>
 
-                            <!-- Recent Sales -->
+
+                            <!--Product radio Modal -->
+                            <div class="modal fade" id="productModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content" id="model1">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title1" id="exampleModalLabel">Create New Item - Product
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="box3">
+                                                    <div class="col-md-6">
+                                                        <div class="box5">
+                                                            <img src="assets/img/description-icon 1.png" alt="">
+                                                            <p class="fw-bold">Basic Details</p>
+                                                        </div>
+                                                        <hr class="line">
+                                                        <h6>Advanced Details</h6>
+                                                        <div class="text11">
+                                                            <img src="assets/img/empty-box-icon 2.png" alt="">
+                                                            <a href="#">
+                                                                <p>Stock Details</p>
+                                                            </a>
+                                                            <img src="assets/img/inr-icon 2.png" alt="">
+                                                            <a href="#">
+                                                                <p>Pricing Details</p>
+                                                            </a>
+                                                            <img src="assets/img/form-icon 1.png" alt="">
+                                                            <a href="#">
+                                                                <p>Custom Fields</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="box4">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <form>
+                                                                    <label for="itemType">Item Type*</label>
+                                                                    <label class="radio-inline">
+                                                                        <input type="radio" name="optradio"
+                                                                            value="Product" checked> Product
+                                                                    </label>
+                                                                    <label class="radio-inline" id="radio-services"
+                                                                        data-toggle="modal" data-target="#serviceModal">
+                                                                        <input type="radio" name="optradio"
+                                                                            value="Services" id="servicesRadio">
+                                                                        Services
+                                                                    </label>
+                                                                    <div class="form-group">
+                                                                        <label for="inputType">Item Type*</label>
+                                                                        <input type="input" class="form-control"
+                                                                            id="inputType" placeholder="EX Text">
+                                                                    </div>
+                                                                    <label for="inputType">Sales Price</label>
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected>₹ 000</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                    <label for="inputType">Measuring Unit</label>
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected>Pieces(PCS)</option>
+                                                                        <option value="1">Clothing</option>
+                                                                        <option value="2">Dairy</option>
+                                                                        <option value="3">A</option>
+                                                                        <option value="4">B</option>
+                                                                    </select>
+                                                                </form>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <form>
+                                                                    <div class="form-group" id="form">
+                                                                        <label for="inputType">Category</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control"
+                                                                                id="inputType"
+                                                                                placeholder="Select Category">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-check form-switch">
+                                                                        <label class="form-check-label"
+                                                                            for="flexSwitchCheckChecked">Show Item in
+                                                                            Online Store</label>
+                                                                        <!-- <input class="form-check-input" type="checkbox"
+                                                                            id="flexSwitchCheckChecked" checked> -->
+                                                                    </div>
+                                                                    <label for="inputType" id="form1">GST Tax
+                                                                        Rate(%)</label>
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example"
+                                                                        id="select1">
+                                                                        <option selected>None</option>
+                                                                        <option value="1">Clothing</option>
+                                                                        <option value="2">Dairy</option>
+                                                                        <option value="3">A</option>
+                                                                        <option value="4">B</option>
+                                                                    </select>
+                                                                    <div class="form-group" id="form2">
+                                                                        <label for="inputType">Opening Stock</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control"
+                                                                                id="inputType" placeholder="Ex. 000">
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button type="button" class="btn btn-secondary" id="b2"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" id="b3">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Product radio model end -->
+
+
+                            <!--Services radio Modal -->
+                            <div class="modal fade" id="serviceModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content" id="model1">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title1" id="exampleModalLabel">Create New Item - Services
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="box3">
+                                                    <div class="col-md-6">
+                                                        <div class="box5">
+                                                            <img src="assets/img/description-icon 1.png" alt="">
+                                                            <p class="fw-bold">Basic Details</p>
+                                                        </div>
+                                                        <hr class="line">
+                                                        <h6>Advanced Details</h6>
+                                                        <div class="text12">
+                                                            <a href="#" data-toggle="modal" data-target="#othersModal">
+                                                                <p>Others Details</p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p>Custom Fields</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="box4">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <form>
+                                                                    <label for="itemType">Item Type*</label>
+                                                                    <label class="radio-inline">
+                                                                        <input type="radio" name="optradio"
+                                                                            value="Product"> Product
+                                                                    </label>
+
+                                                                    <label class="radio-inline" id="radio">
+                                                                        <input type="radio" name="optradio"
+                                                                            value="Services" checked> Services
+                                                                    </label>
+
+                                                                    <div class="form-group">
+                                                                        <label for="inputType">Service Name</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputType"
+                                                                            placeholder="Ex Service name">
+                                                                    </div>
+
+                                                                    <label for="salesPrice">Sales Price</label>
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example"
+                                                                        id="salesPrice">
+                                                                        <option selected>₹ 000</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+
+                                                                    <label for="measuringUnit">Measuring Unit</label>
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example"
+                                                                        id="measuringUnit">
+                                                                        <option selected>Pieces(PCS)</option>
+                                                                        <option value="1">Clothing</option>
+                                                                        <option value="2">Dairy</option>
+                                                                        <option value="3">A</option>
+                                                                        <option value="4">B</option>
+                                                                    </select>
+                                                                </form>
+                                                            </div>
+
+
+                                                            <div class="col-md-3">
+                                                                <form>
+                                                                    <div class="form-group" id="form">
+                                                                        <label for="category">Category</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control"
+                                                                                id="category"
+                                                                                placeholder="Select Category">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-check form-switch">
+                                                                        <label class="form-check-label"
+                                                                            for="flexSwitchCheckChecked">Show Item in
+                                                                            Online Store</label>
+                                                                        <!-- <input class="form-check-input" type="checkbox"
+                                                                            id="flexSwitchCheckChecked" checked> -->
+                                                                    </div>
+                                                                    <label for="gstRate" id="form3">GST Tax
+                                                                        Rate(%)</label>
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example"
+                                                                        id="select2">
+                                                                        <option selected>None</option>
+                                                                        <option value="1">Clothing</option>
+                                                                        <option value="2">Dairy</option>
+                                                                        <option value="3">A</option>
+                                                                        <option value="4">B</option>
+                                                                    </select>
+                                                                    <div class="form-group" id="form2">
+                                                                        <label for="openingStock">Service Code</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control"
+                                                                                id="openingStock"
+                                                                                placeholder="Enter Service Code">
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button type="button" class="btn btn-secondary" id="b2"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" id="b3">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Services radio model end -->
+
+
+                            <!--others details Modal start-->
+                            <div class="modal fade" id="othersModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content" id="modal-content3">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title2" id="exampleModalLabel">Create New Item</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="box3">
+                                                    <div class="col-md-6">
+                                                        <div class="box5">
+                                                            <img src="assets/img/description-icon 1.png" alt="">
+                                                            <p class="fw-bold">Basic Details</p>
+                                                        </div>
+                                                        <hr class="line">
+                                                        <h6>Advanced Details</h6>
+                                                        <div class="text13">
+                                                            <a href="#">
+                                                                <p>Other Details</p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p>Custom Fields</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="box4">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <form>
+                                                                    <div class="form-group">
+                                                                        <label for="inputType">SAC Code</label>
+                                                                        <input type="input" class="form-control"
+                                                                            id="inputType" placeholder="Enter SAC Code">
+                                                                    </div>
+                                                                    <a href="#">
+                                                                        <p class="team">Find SAC Code</p>
+                                                                    </a>
+                                                                    <div class="form-group" id="form4">
+                                                                        <label for="description">Description</label>
+                                                                        <textarea class="form-control" rows="2"
+                                                                            id="description"
+                                                                            placeholder="Enter Description"></textarea>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--others details model end -->
+
+                            <!-- Recent Sales model start-->
                             <div class="col-12" id="b1">
                                 <div class="card recent-sales">
                                     <div class="card-body">
@@ -534,6 +867,7 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -545,6 +879,8 @@
         </section>
     </main>
     <!-- End #main -->
+
+
     <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -561,6 +897,7 @@
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
     <script>
         $(document).ready(function () {
             $('input[type="checkbox"]').change(function () {
@@ -569,6 +906,20 @@
             });
         });
     </script>
+
+    <!-- <script>
+        $(document).ready(function () {
+            $('input[name="optradio"]').change(function () {
+                if ($(this).val() === 'Product') {
+                    $('#productModal').modal('show');
+                    $('#serviceModal').modal('hide');
+                } else if ($(this).val() === 'Services') {
+                    $('#serviceModal').modal('show');
+                    $('#productModal').modal('hide');
+                }
+            });
+        });
+    </script> -->
 </body>
 
 </html>
