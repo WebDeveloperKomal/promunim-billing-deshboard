@@ -1180,3 +1180,7 @@ label {
 .bi-check-circle-fill {
     color: #3BB161;
 }
+
+.card-box-table {
+    width: 98%;
+}

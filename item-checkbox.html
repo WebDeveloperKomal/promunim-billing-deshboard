@@ -108,7 +108,6 @@
             </li>
             <!-- End Components Nav -->
 
-
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
                     <img class="img-class3" src="assets/img/tag-label-grey-icon 1.png">
@@ -253,7 +252,6 @@
             </li>
             <!-- End Error 404 Page Nav -->
 
-
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
                     <img class="img-class7" src="assets/img/two.png">
@@ -261,7 +259,6 @@
                 </a>
             </li>
             <!-- End Blank Page Nav -->
-
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
@@ -271,7 +268,6 @@
                 </a>
             </li>
             <!-- End Blank Page Nav -->
-
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
@@ -492,16 +488,18 @@
                                                                 <p>Stock Details</p>
                                                             </a>
                                                             <img src="assets/img/inr-icon 2.png" alt="">
-                                                            <a href="#">
+                                                            <a href="#" data-toggle="modal" data-target="#pricingModal">
                                                                 <p>Pricing Details</p>
                                                             </a>
                                                             <img src="assets/img/form-icon 1.png" alt="">
-                                                            <a href="#">
+                                                            <a href="#" data-toggle="modal" data-target="#customModal">
                                                                 <p>Custom Fields</p>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <!-- data-toggle="modal" data-target="#pricingModal" -->
 
                                                 <div class="box4">
                                                     <div class="col-md-6">
@@ -543,6 +541,8 @@
                                                                     </select>
                                                                 </form>
                                                             </div>
+
+
                                                             <div class="col-md-3">
                                                                 <form>
                                                                     <div class="form-group" id="form">
@@ -590,13 +590,107 @@
                                                 data-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-primary" id="b3">Save</button>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <!--Product radio model end -->
 
 
-                            <!--Services radio Modal -->
+                            <!--Pricing Details Modal start-->
+                            <div class="modal fade" id="pricingModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content" id="model1">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title1" id="exampleModalLabel">Create New Item - Pricing
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="box3">
+                                                    <div class="col-md-6">
+                                                        <div class="box5">
+                                                            <img src="assets/img/description-icon 1.png" alt="">
+                                                            <p class="fw-bold">Basic Details</p>
+                                                        </div>
+                                                        <hr class="line">
+                                                        <h6>Advanced Details</h6>
+                                                        <div class="text11">
+                                                            <img src="assets/img/empty-box-icon 2.png" alt="">
+                                                            <a href="#">
+                                                                <p>Stock Details</p>
+                                                            </a>
+                                                            <img src="assets/img/inr-icon 2.png" alt="">
+                                                            <a href="#" data-toggle="modal" data-target="#pricingModal">
+                                                                <p>Pricing Details</p>
+                                                            </a>
+                                                            <img src="assets/img/form-icon 1.png" alt="">
+                                                            <a href="#" data-toggle="modal" data-target="#customModal">
+                                                                <p>Custom Fields</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box6">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <form>
+                                                                    <label for="inputType">Sales Price</label>
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected>₹ 000</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                    <label for="inputType">GST Tax Rate(%)</label>
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected>None</option>
+                                                                        <option value="1">Clothing</option>
+                                                                        <option value="2">Dairy</option>
+                                                                        <option value="3">A</option>
+                                                                        <option value="4">B</option>
+                                                                    </select>
+                                                                </form>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <form>
+                                                                    <label for="inputType" id="form5">Purchase
+                                                                        Price</label>
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example"
+                                                                        id="select1">
+                                                                        <option selected>₹ 000</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </form>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button type="button" class="btn btn-secondary" id="b2"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" id="b3">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pricing Details model end -->
+
+
+                            <!--Services radio Modal start-->
                             <div class="modal fade" id="serviceModal" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -622,12 +716,13 @@
                                                             <a href="#" data-toggle="modal" data-target="#othersModal">
                                                                 <p>Others Details</p>
                                                             </a>
-                                                            <a href="#">
+                                                            <a href="#" data-toggle="modal" data-target="#customModal">
                                                                 <p>Custom Fields</p>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
+
 
                                                 <div class="box4">
                                                     <div class="col-md-6">
@@ -639,19 +734,16 @@
                                                                         <input type="radio" name="optradio"
                                                                             value="Product"> Product
                                                                     </label>
-
                                                                     <label class="radio-inline" id="radio">
                                                                         <input type="radio" name="optradio"
                                                                             value="Services" checked> Services
                                                                     </label>
-
                                                                     <div class="form-group">
                                                                         <label for="inputType">Service Name</label>
                                                                         <input type="text" class="form-control"
                                                                             id="inputType"
                                                                             placeholder="Ex Service name">
                                                                     </div>
-
                                                                     <label for="salesPrice">Sales Price</label>
                                                                     <select class="form-select"
                                                                         aria-label="Default select example"
@@ -661,7 +753,6 @@
                                                                         <option value="2">Two</option>
                                                                         <option value="3">Three</option>
                                                                     </select>
-
                                                                     <label for="measuringUnit">Measuring Unit</label>
                                                                     <select class="form-select"
                                                                         aria-label="Default select example"
@@ -674,7 +765,6 @@
                                                                     </select>
                                                                 </form>
                                                             </div>
-
 
                                                             <div class="col-md-3">
                                                                 <form>
@@ -735,9 +825,8 @@
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content" id="modal-content3">
-
                                         <div class="modal-header">
-                                            <h5 class="modal-title2" id="exampleModalLabel">Create New Item</h5>
+                                            <h5 class="modal-title2" id="exampleModalLabel">Others Details</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -754,16 +843,15 @@
                                                         <hr class="line">
                                                         <h6>Advanced Details</h6>
                                                         <div class="text13">
-                                                            <a href="#">
+                                                            <a href="#" data-toggle="modal" data-target="#othersModal">
                                                                 <p>Other Details</p>
                                                             </a>
-                                                            <a href="#">
+                                                            <a href="#" data-toggle="modal" data-target="#customModal">
                                                                 <p>Custom Fields</p>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
-
 
                                                 <div class="box4">
                                                     <div class="col-md-6">
@@ -795,6 +883,68 @@
                                 </div>
                             </div>
                             <!--others details model end -->
+
+
+                            <!--custom details Modal start-->
+                            <div class="modal fade" id="customModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content" id="modal-content4">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title3" id="exampleModalLabel">Custom Details</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="box3">
+                                                    <div class="col-md-6">
+                                                        <div class="box5">
+                                                            <img src="assets/img/description-icon 1.png" alt="">
+                                                            <p class="fw-bold">Basic
+                                                                Details</p>
+                                                        </div>
+                                                        <hr class="line">
+                                                        <h6>Advanced Details</h6>
+                                                        <div class="text14">
+                                                            <a href="#">
+                                                                <p>Other Details</p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p>Custom Fields</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box4">
+                                                    <div class="col-md-6">
+                                                        <div
+                                                            class="col-md-3 d-flex justify-content-center align-items-center">
+                                                            <img src="assets/img/paper 1.png" class="img-fluid3"
+                                                                alt="Your Image">
+                                                            <img src="assets/img/Rectangle 222.png" class="img-fluid4"
+                                                                alt="Your Image">
+                                                        </div>
+                                                        <p class="text-center">You don't have any custom fields created
+                                                            yet</p>
+                                                        <button type="button" class="btn btn-light" id="light">+ Create
+                                                            custom
+                                                            field</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="modal-footer d-flex justify-content-center">
+                                            <button type="button" class="btn btn-secondary" id="b2"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" id="b3">Save</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--cusom details model end -->
+
 
                             <!-- Recent Sales model start-->
                             <div class="col-12" id="b1">
@@ -867,7 +1017,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
