@@ -312,7 +312,8 @@
     <!-- main section -->
     <main id="main" class="main">
         <div class="pagetitle">
-            <h1><i class="bi bi-chevron-left"></i>&nbsp;GSTR-1 (Sales)</h1>
+            <h1><a href="reports.html"><i class="bi bi-chevron-left" style="color: #004C8C;"></i></a>&nbsp;GSTR-1
+                (Sales) Invoice-View</h1>
             <button type="button" class="btn btn-light btn-margin-top"><i
                     class="bi bi-star-fill"></i>&nbsp;&nbsp;&nbsp;Favourite
             </button>
@@ -344,15 +345,13 @@
 
                         <select class="form-select2" aria-label="Default select example">
                             <option selected>Download JSON</option>
-                            <option value="1">Download JSON</option>
-                            <option value="2">Download Excel</option>
-                            <option value="3">Download Pdf</option>
+                            <option value="1">Download Excel</option>
+                            <option value="2">Download Pdf</option>
                         </select>
 
                         <select class="form-select3" aria-label="Default select example">
                             <option selected>Email JSON</option>
-                            <option value="1">Email JSON</option>
-                            <option value="2">Email Excel</option>
+                            <option value="1">Email Excel</option>
                         </select>
 
                         <div class="second-btn3">
@@ -361,10 +360,12 @@
                             <img src="assets/img/print.png">
                         </div>
 
-                        <select class="form-select4" aria-label="Default select example">
+                        <select class="form-select4" aria-label="Default select example"
+                            onchange="window.location.href = this.value;">
                             <option selected>Invoice View</option>
-                            <option value="1">Invoice View</option>
-                            <option value="2">GST Portal View</option>
+                            <option value="GSTR-1(sales)portal-view.html">GST Portal View</option>
+                            <!-- Add more options as needed -->
+                        </select>
                         </select>
 
                         <!-- Recent Sales -->
