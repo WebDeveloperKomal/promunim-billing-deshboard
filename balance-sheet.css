@@ -891,11 +891,13 @@ p {
     height: 44px;
     border-radius: 10px;
     margin-left: 20px;
+    font-size: 12px;
 }
 
 label {
     display: inline-block;
     margin-left: 20px;
+    font-size: 12px;
 }
 
 .btn-secondary {

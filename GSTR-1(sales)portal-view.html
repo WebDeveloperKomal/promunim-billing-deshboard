@@ -389,7 +389,8 @@
 
                                 <!-- buttons -->
 
-                                <div id="b2b" class="section active">
+                                <div id="b2b" class="table-container active">
+                                    <!-- Content for B2B section -->
                                     <div class="row">
                                         <div class="col">
                                             <button type="button" class="btn btn-default btn-custom">Number of
@@ -412,7 +413,6 @@
                                                 Cess:₹0</button>
                                         </div>
                                     </div>
-
 
                                     <!-- Data Table -->
                                     <div class="card-box-table">
@@ -442,36 +442,308 @@
                                         </div>
                                     </div>
                                     <h5>Invoices <span style="color: #3BB161;">pushed to IRN</span> will be
-                                        autopopulated on
-                                        govt GST portal. However, the tax payer should still verify all the data in this
-                                        report at the time of filing to avoid any errors.</h5>
+                                        autopopulated on govt GST portal. However, the tax payer should still verify all
+                                        the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="b2cl" class="section" style="display: none;">
-                                    <!-- Same content as b2b -->
+                                <div id="b2cl" class="table-container" style="display: none;">
+                                    <!-- Content for B2B section -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Number of
+                                                Invoices:0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Invoice
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Taxable
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Cess:₹0</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Data Table -->
+                                    <div class="card-box-table">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Invoice No.</td>
+                                                    <td>Invoice Date</td>
+                                                    <td>Invoice Value</td>
+                                                    <td>Place of Supply</td>
+                                                    <td>Reverse Charge</td>
+                                                    <td>Applicable Tax %</td>
+                                                    <td>Rate</td>
+                                                    <td>Taxable Value</td>
+                                                    <td>CESS</td>
+                                                    <td>Ecommerce GSTIN</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="height: 40px;"></th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h5>Invoices <span style="color: #3BB161;">pushed to IRN</span> will be
+                                        autopopulated on govt GST portal. However, the tax payer should still verify all
+                                        the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="b2cs" class="section" style="display: none;">
-                                    <!-- Same content as b2b -->
+                                <div id="b2cs" class="table-container" style="display: none;">
+                                    <!-- Content for B2CS section -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Invoice
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Taxable
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Cess:₹0</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Data Table -->
+                                    <div class="card-box-table">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Type</td>
+                                                    <td>Place of Supply</td>
+                                                    <td>Applicable Tax %</td>
+                                                    <td>Rate</td>
+                                                    <td>Taxable Value</td>
+                                                    <td>CESS</td>
+                                                    <td>Ecommerce GSTIN</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="height: 40px;"></th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h5>Invoices <span style="color: #3BB161;">pushed to IRN</span> will be
+                                        autopopulated on govt GST portal. However, the tax payer should still verify all
+                                        the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="cdnr" class="section" style="display: none;">
-                                    <!-- Same content as b2b -->
+                                <div id="cdnr" class="table-container" style="display: none;">
+                                    <!-- Content for CDNR section -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Number of
+                                                Recipients:0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Number of
+                                                Notes:0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Note
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Taxable
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Cess:₹0</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Data Table -->
+                                    <div class="card-box-table">
+                                        <div class="scroll-container">
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>GSTIN/UIN of Recipient</td>
+                                                        <td>Receivers name</td>
+                                                        <td>Note Number</td>
+                                                        <td>Note Date</td>
+                                                        <td>Note Type</td>
+                                                        <td>Place of Supply</td>
+                                                        <td>Reverse Charge</td>
+                                                        <td>Note Supply Type</td>
+                                                        <td>Note Value</td>
+                                                        <td>Applicable Tax %</td>
+                                                        <td>Rate</td>
+                                                        <td>Taxable Value</td>
+                                                        <td>Cases Amount</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="height: 40px;"></th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <h5>Invoices <span style="color: #3BB161;">pushed to IRN</span> will be
+                                        autopopulated on govt GST portal. However, the tax payer should still verify all
+                                        the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="cdnur" class="section" style="display: none;">
-                                    <!-- Same content as b2b -->
+                                <div id="cdnur" class="table-container" style="display: none;">
+                                    <!-- Content for CDNUR section -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Number of
+                                                Notes:0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Note
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Taxable
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Cess:₹0</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Data Table -->
+                                    <div class="card-box-table">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>UR Type</td>
+                                                    <td>Note Number</td>
+                                                    <td>Note Date</td>
+                                                    <td>Note Type</td>
+                                                    <td>Place Of Supply</td>
+                                                    <td>Note Value</td>
+                                                    <td>Applicable Tax %</td>
+                                                    <td>Rate</td>
+                                                    <td>Taxable Value</td>
+                                                    <td>CESS</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="height: 40px;"></th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h5>Invoices <span style="color: #3BB161;">pushed to IRN</span> will be
+                                        autopopulated on govt GST portal. However, the tax payer should still verify all
+                                        the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="exemp" class="section" style="display: none;">
-                                    <!-- Same content as b2b -->
+                                <div id="exemp" class="table-container" style="display: none;">
+                                    <!-- Content for EXEMP section -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Nil Rated
+                                                Supplies:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Exempted
+                                                Supplies:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Non-GST
+                                                Supplies:₹0</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Data Table -->
+                                    <div class="card-box-table">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Description</td>
+                                                    <td>Nil rated Supplies</td>
+                                                    <td>Exempted (other than nill rated/non GST supply)</td>
+                                                    <td>Non-GST Supplies</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="height: 40px;"></th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h5>Invoices <span style="color: #3BB161;">pushed to IRN</span> will be
+                                        autopopulated on govt GST portal. However, the tax payer should still verify all
+                                        the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="hsn" class="section" style="display: none;">
-                                    <!-- Same content as b2b -->
+                                <div id="hsn" class="table-container" style="display: none;">
+                                    <!-- Content for HSN section -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">No. of
+                                                HSN:0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Taxable
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Integrated
+                                                Value:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total Central
+                                                Tax:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total State/UT
+                                                Tax:₹0</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Cess:₹0</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Data Table -->
+                                    <div class="card-box-table">
+                                        <div class="scroll-container">
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>HSN</td>
+                                                        <td>Description</td>
+                                                        <td>UQC</td>
+                                                        <td>Total Quantity</td>
+                                                        <td>Total Value</td>
+                                                        <td>Rate</td>
+                                                        <td>Taxable Value</td>
+                                                        <td>Integrated Tax Amount</td>
+                                                        <td>Central Tax Amout</td>
+                                                        <td>Total status/UT tax</td>
+                                                        <td>Taxable Value</td>
+                                                        <td>Cess Amount</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="height: 40px;"></th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <h5>Invoices <span style="color: #3BB161;">pushed to IRN</span> will be
+                                        autopopulated on govt GST portal. However, the tax payer should still verify all
+                                        the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
                             </div>
                         </div>
+
                         <div class="color-box">
                             <div class="color-light">
                             </div>
@@ -501,15 +773,20 @@
 
     <script>
         function toggleSection(sectionId) {
-            // Get all sections
-            var sections = document.getElementsByClassName('section');
             // Hide all sections
+            var sections = document.getElementsByClassName('table-container');
             for (var i = 0; i < sections.length; i++) {
-                sections[i].style.display = 'none';
+                sections[i].classList.remove('active');
             }
+
             // Display the clicked section
-            var sectionToShow = document.getElementById(sectionId);
-            sectionToShow.style.display = 'block';
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.classList.add('active');
+            }
+
+            // Optionally, you can load data into the table of the active section here
+            // Example: fetchDataForSection(sectionId);
         }
     </script>
 </body>

@@ -24,7 +24,7 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
     <!-- Template Main CSS File -->
-    <link href="reports-party.css" rel="stylesheet">
+    <link href="GSTR-2(purchase).css" rel="stylesheet">
 </head>
 
 <body>
@@ -50,9 +50,9 @@
                 <p>Create Sales Invoice</p>
             </button>
             <!-- <div class="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<a href="#">Link 3</a>
 </div> -->
         </div>
 
@@ -308,13 +308,13 @@
     </aside>
     <!-- End Sidebar-->
 
-
     <!-- main section -->
     <main id="main" class="main">
         <div class="pagetitle">
-            <h1>&nbsp;Reports</h1>
-            <button type="button" class="btn btn-light btn-margin-top"><img src="assets/img/Frame (1)-1.png" alt=""
-                    class="img-fluid">&nbsp;&nbsp;&nbsp;CA Reports Sharing
+            <h1><a href="reports.html"><i class="bi bi-chevron-left" style="color: #004C8C;"></i></a>&nbsp;GSTR-2
+                (Purchase)</h1>
+            <button type="button" class="btn btn-light btn-margin-top"><i
+                    class="bi bi-star-fill"></i>&nbsp;&nbsp;&nbsp;Favourite
             </button>
             <hr>
         </div>
@@ -325,167 +325,145 @@
                 <!-- Left side columns -->
                 <div class="col-lg-12">
                     <div class="row">
-
-                        <div class="col-md-4">
-                            <a href="reports-category.html" class="btn btn-light">Category</a>
-                        </div>
-
-                        <div class="col-md-4">
-                            <a href="reports-payment-collection.html" class="btn btn-dark">Payment Collection</a>
-                        </div>
-
-                        <div class="col-md-4">
-                            <a href="reports-item.html" class="btn btn-success">Item</a>
-                        </div>
-
-                        <div class="col-md-4">
-                            <a href="reports-invoice-details.html" class="btn btn-warning">Invoice Details</a>
-                        </div>
-
-                        <div class="col-md-4">
-                            <a href="reports-summary.html" class="btn btn-danger">Summary</a>
-                        </div>
-
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>This Week 8 April 2024 - 12 April 2024</option>
+                            <option value="1">Today</option>
+                            <option value="2">Yesterday</option>
+                            <option value="3">This Week</option>
+                            <option value="4">Last Week</option>
+                            <option value="5">Last 7 Days</option>
+                            <option value="6">This Month</option>
+                            <option value="7">Last Month</option>
+                            <option value="8">This Quarter</option>
+                            <option value="9">Last Quarter</option>
+                            <option value="10">Current Fiscal Year</option>
+                            <option value="11">Previous Fiscal Year</option>
+                            <option value="12">Last 365 Days</option>
+                            <option value="13">Date Range</option>
+                        </select>
                         <div class="second-btn3">
-                            <a href="reports-party.html"><button type="button" class="btn-second3">Party</button></a>
+                            <button type="button" class="btn-second3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print
+                                Pdf</button>
+                            <img src="assets/img/print.png">
                         </div>
-
-                        <div class="text">
-                            <h6>Filled By</h6>
+                        <div class="second-btn2">
+                            <button type="button" class="btn-second2">Download Excel</button>
+                            <img src="assets/img/table-icon 1.png">
                         </div>
 
                         <!-- Recent Sales -->
+
                         <div class="col-12" id="b1">
                             <div class="card recent-sales overflow-auto">
                                 <div class="card-box-table">
 
-                                    <table class="table table-bordered">
-                                        <tbody>
-                                            <tr class="text-left">
-                                                <td style="width: 35%;"><img src="assets/img/stars-icon 1.png" alt=""
-                                                        class="">&nbsp;&nbsp;Favourite</td>
-                                                <td style="width: 30%;"><img src="assets/img/gst-icon 1.png" alt=""
-                                                        class="">&nbsp;&nbsp;GST
-                                                </td>
-                                                <td><img src="assets/img/purchase-order-icon 1.png" alt=""
-                                                        class="">&nbsp;&nbsp;Transactions
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-outline-primary"
+                                            id="purchaseButton">Purchase</button>
+                                        <button type="button" class="btn btn-outline-primary"
+                                            id="purchaseReturnButton">Purchase Return</button>
+                                    </div>
 
-
-                                    <div class="row">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr class="text-left">
-                                                    <th style="width: 35%;" class="text-start">
-                                                        No Reports Found </th>
-                                                    <th>No Reports Found</th>
-                                                    <th class="text-left">No Reports Found</th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
+                                    <div id="purchaseTable" class="table-container">
                                         <table class="table table-bordered">
                                             <tbody>
-                                                <tr class="text-left">
-                                                    <td style="width: 35%;"><img src="assets/img/box-icon 1.png" alt=""
-                                                            class="">&nbsp;&nbsp;Item</td>
-                                                    <td><img src="assets/img/broker-dealer-icon 1.png" alt=""
-                                                            class="">&nbsp;&nbsp;Party
-                                                    </td>
-                                                    <td style="width: 35%;">
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
-                                        <table class="table">
-                                            <tbody>
                                                 <tr>
-                                                    <th style="width: 35%;">Import Report By Party<i class="bi bi-star"
-                                                            style="float: right;"></i>
-                                                    </th>
-                                                    <th>Receivable Ageing Report<i class="bi bi-star"
-                                                            style="margin-left: 120px;"></i></th>
-                                                    <th></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>PLACE OF SUPPLY</td>
+                                                    <td></td>
+                                                    <td>INVOICE DETAILS</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>AMOUNT OF TAX</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
                                                 </tr>
-                                            </tbody>
-                                        </table>
-
-
-                                        <table class="table">
-                                            <tbody>
                                                 <tr>
-                                                    <th style="width: 35%;"></th>
-                                                    <th>Party Report By item<i class="bi bi-star"
-                                                            style="margin-left: 152px;"></i></th>
-                                                    <th></th>
+                                                    <th>GST-IN</th>
+                                                    <th>CUSTOMER NAME</th>
+                                                    <th>STATE CODE</th>
+                                                    <th>STATE NAME</th>
+                                                    <th>INVOICE NO</th>
+                                                    <th>ORIGINAL NO</th>
+                                                    <th>INVOICE DATE</th>
+                                                    <th>INVOICE VALUE</th>
+                                                    <th>TOTAL TAX %</th>
+                                                    <th>TAXABLE VALUE</th>
+                                                    <th>SGST</th>
+                                                    <th>CGST</th>
+                                                    <th>IGST</th>
+                                                    <th>CESS</th>
+                                                    <th>TOTAL TAX</th>
                                                 </tr>
                                             </tbody>
                                         </table>
-
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <th style="width: 35%;">
-                                                    </th>
-                                                    <th>Party Statement (Ledger)<i class="bi bi-star"
-                                                            style="margin-left: 124px;"></i></th>
-                                                    <th></th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <th style="width: 35%;"></th>
-                                                    <th>Party Wise Outstanding<i class="bi bi-star"
-                                                            style="margin-left: 132px;"></i></th>
-                                                    <th></th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <th style="width: 35%;">
-                                                    </th>
-                                                    <th>Sales Summary - Category Wise<i class="bi bi-star"
-                                                            style="margin-left: 83px;"></i></th>
-                                                    <th></th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <th style="width: 35%;"></th>
-                                                    <th style="color: #004C8C;">See More<i
-                                                            class="bi bi-chevron-right"></i>
-                                                    </th>
-                                                    <th></th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
                                     </div>
+
+                                    <div id="purchaseReturnTable" class="table-container" style="display: none;">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>PLACE OF SUPPLY</td>
+                                                    <td></td>
+                                                    <td>INVOICE DETAILS</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>AMOUNT OF TAX</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>GST-IN</th>
+                                                    <th>CUSTOMER NAME</th>
+                                                    <th>STATE CODE</th>
+                                                    <th>STATE NAME</th>
+                                                    <th>INVOICE NO</th>
+                                                    <th>ORIGINAL NO</th>
+                                                    <th>INVOICE DATE</th>
+                                                    <th>INVOICE VALUE</th>
+                                                    <th>INVOICE TYPE</th>
+                                                    <th>TOTAL TAX %</th>
+                                                    <th>TAXABLE VALUE</th>
+                                                    <th>SGST</th>
+                                                    <th>CGST</th>
+                                                    <th>IGST</th>
+                                                    <th>CESS</th>
+                                                    <th>TOTAL TAX</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- End Recent Sales -->
                 </div>
+                <div class="rupees-card">
+                    <img src="assets/img/rupees-card.png">
+                    <h2>No transactions available to generate report</h2>
+                </div>
+                <div class="color-box">
+                    <div class="color-light">
+                    </div>
+                </div>
+            </div>
+            <!-- End Recent Sales -->
+            </div>
             </div>
             <!-- End Left side columns -->
             </div>
@@ -503,33 +481,20 @@
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-
-    <script>
-        function showInputField() {
-            var checkBox = document.getElementById("flexCheckDefault");
-            var inputFieldGroup = document.getElementById("inputFieldGroup");
-
-            if (checkBox.checked == true) {
-                inputFieldGroup.style.display = "block";
-            } else {
-                inputFieldGroup.style.display = "none";
-            }
-        }
-    </script>
-
-    <script>
-        // JavaScript to handle toggles
-        document.getElementById('toggleFirst').addEventListener('change', function () {
-            var firstToggleContent = document.getElementById('firstToggleContent');
-            if (this.checked) {
-                firstToggleContent.style.display = 'block';
-            } else {
-                firstToggleContent.style.display = 'none';
-            }
-        });
-    </script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        document.getElementById('purchaseButton').addEventListener('click', function () {
+            document.getElementById('purchaseTable').style.display = 'block';
+            document.getElementById('purchaseReturnTable').style.display = 'none';
+        });
+
+        document.getElementById('purchaseReturnButton').addEventListener('click', function () {
+            document.getElementById('purchaseTable').style.display = 'none';
+            document.getElementById('purchaseReturnTable').style.display = 'block';
+        });
+    </script>
 </body>
 
 </html>

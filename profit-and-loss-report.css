@@ -437,11 +437,11 @@ h6 {
     margin-left: -10px;
 }
 
-.btn-second3 {
+/* .btn-second3 {
     width: 291px;
     background-color: white;
     padding: 1px 14px;
-    margin-top: -31px;
+    margin-top: -42px;
     color: #636363;
     margin-left: 7px;
     text-align: left;
@@ -455,13 +455,13 @@ h6 {
 .btn-second3:hover {
     background-color: #3BB161;
     color: white;
-}
+} */
 
-.second-btn3 img {
+/* .second-btn3 img {
     margin-top: -20px;
     margin-left: 278px;
     position: absolute;
-}
+} */
 
 /* Info Cards */
 .table {
@@ -475,7 +475,7 @@ h6 {
     margin-left: 4px;
     width: 99%;
     height: 654px;
-    margin-top: 41px;
+    margin-top: 11px;
     border: 1px solid rgb(153, 149, 149);
 }
 
@@ -896,7 +896,7 @@ hr {
 }
 
 .img-calendar img {
-    margin-top: -25px;
+    margin-top: -26px;
     margin-left: 485px;
     position: absolute;
 }
@@ -905,7 +905,7 @@ hr {
     width: 119px;
     background-color: white;
     padding: 1px 14px;
-    margin-top: -1px;
+    margin-top: -34px;
     color: #636363;
     margin-left: 951px;
     font-size: 12px;
@@ -915,14 +915,9 @@ hr {
     position: absolute;
 }
 
-.btn-second3:hover {
-    background-color: #3BB161;
-    color: white;
-}
-
 .second-btn3 img {
-    margin-top: 8px;
-    margin-left: 965px;
+    margin-top: -26px;
+    margin-left: 971px;
     position: absolute;
 }
 
@@ -930,7 +925,7 @@ hr {
     width: 157px;
     background-color: white;
     padding: 1px 14px;
-    margin-top: -1px;
+    margin-top: -34px;
     color: #636363;
     margin-left: 786px;
     text-align: left;
@@ -941,13 +936,8 @@ hr {
     position: absolute;
 }
 
-.btn-second2:hover {
-    background-color: #3BB161;
-    color: white;
-}
-
 .second-btn2 img {
-    margin-top: 5px;
+    margin-top: -28px;
     margin-left: 909px;
     position: absolute;
     background-color: black;
@@ -967,4 +957,13 @@ hr {
 .table.table-bordered th {
     color: #636363;
     font-size: 12px;
+}
+
+.form-select {
+    width: 296px;
+    height: 37px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: -6px;
 }
