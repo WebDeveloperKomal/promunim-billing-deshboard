@@ -211,7 +211,6 @@
             </li>
             <!-- End F.A.Q Page Nav -->
 
-
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
                     <img class="img-class5" src="assets/img/line2.png">
@@ -220,7 +219,6 @@
                 </a>
             </li>
             <!-- End Contact Page Nav -->
-
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
@@ -231,7 +229,6 @@
             </li>
             <!-- End Register Page Nav -->
 
-
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
                     <img class="img-class7" src="assets/img/line4.png">
@@ -241,10 +238,8 @@
             </li><br>
             <!-- End Login Page Nav -->
 
-
             <li class="account">&nbsp;&nbsp;&nbsp;BUSINESS TOOLS
             </li><br>
-
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
@@ -255,7 +250,6 @@
             </li>
             <!-- End Error 404 Page Nav -->
 
-
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
                     <img class="img-class7" src="assets/img/two.png">
@@ -263,7 +257,6 @@
                 </a>
             </li>
             <!-- End Blank Page Nav -->
-
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
@@ -274,7 +267,6 @@
             </li>
             <!-- End Blank Page Nav -->
 
-
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
                     <img class="img-class7" src="assets/img/line7.png">
@@ -283,7 +275,6 @@
                 </a>
             </li>
             <!-- End Blank Page Nav -->
-
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
@@ -331,17 +322,76 @@
                                 Pdf</button>
                             <img src="assets/img/print.png">
                         </div>
-                        <div class="second-btn2">
-                            <button type="button" class="btn-second2">Download Excel</button>
-                            <img src="assets/img/table-icon 1.png">
+
+                        <select class="form-select1" aria-label="Default select example">
+                            <option selected>Download Excel</option>
+                            <option value="1">Download Pdf</option>
+                        </select>
+
+                        <select class="form-select2" aria-label="Default select example">
+                            <option selected>All Categories</option>
+                            <option value="1">abcde</option>
+                            <option value="2">abcd</option>
+                        </select>
+
+                        <select class="form-select3" aria-label="Default select example" id="selectOption">
+                            <option selected>Today - 15 April 2024</option>
+                            <option value="1">Today</option>
+                            <option value="2">As of previous
+                                fiscal year (Can be e-mailed only)</option>
+                        </select>
+
+                        <!-- <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Today - 15 April 2024
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Today</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal1">As of
+                                    previous fiscal year (Can be e-mailed only)</a>
+                            </div>
+                        </div> -->
+                        <!-- data-bs-toggle="modal" data-bs-target="#exampleModal" apply only button nd link model -->
+
+                        <!-- Modal start -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>This is the content of the modal.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- Modal end -->
 
                         <!-- Recent Sales -->
                         <div class="col-12" id="b1">
                             <div class="card recent-sales overflow-auto">
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-primary" id="btn-all">All</button>
+                                    <button type="button" class="btn btn-outline-primary" id="btn-collect">To
+                                        Collect<br>₹89521</button>
+                                    <button type="button" class="btn btn-outline-primary" id="btn-pay">To
+                                        Pay<br>₹0</button>
+                                </div>
+
                                 <button type="button" class="btn btn-warning">GSTIN and Address can be viewed in excel
                                     report</button>
-                                <div class="card-box-table">
+
+                                <div class="card-box-table" id="table-all">
                                     <table class="table table-bordered">
                                         <tbody>
                                             <tr>
@@ -431,6 +481,79 @@
                                         </tbody>
                                     </table>
                                 </div>
+
+                                <div class="card-box-table" id="table-collect" style="display: none;">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 40%;">NAME</td>
+                                                <td style="width: 20%;">CATEGORY</td>
+                                                <td style="width: 20%;">CONTACT NUMBER</td>
+                                                <td style="width: 20%;">CLOSING BALANCE</td>
+                                            </tr>
+                                            <tr>
+                                                <th style="width: 35%;">ACADAJ Learning OPC Pvt Ltd</th>
+                                                <th>-</th>
+                                                <th>9822964728</th>
+                                                <th>₹ 2,500</th>
+                                            </tr>
+                                            <tr>
+                                                <th style="width: 35%;">German Moters</th>
+                                                <th>-</th>
+                                                <th>9881156222</th>
+                                                <th>₹ 60,000</th>
+                                            </tr>
+                                            <tr>
+                                                <th style="width: 35%;">Sample Party 1</th>
+                                                <th>-</th>
+                                                <th>8999999990</th>
+                                                <th>₹ 10</th>
+                                            </tr>
+                                            <tr>
+                                                <th style="width: 35%;">Sample Party 2</th>
+                                                <th>-</th>
+                                                <th>8999999991</th>
+                                                <th>₹ 11</th>
+                                            </tr>
+                                            <tr>
+                                                <th style="width: 35%;">Sample Party 3</th>
+                                                <th>-</th>
+                                                <th>8999999992</th>
+                                                <th>₹ 10,000</th>
+                                            </tr>
+                                            <tr>
+                                                <th style="width: 35%;">Sample Party 4</th>
+                                                <th>-</th>
+                                                <th>7999999999</th>
+                                                <th>₹ 2,000</th>
+                                            </tr>
+                                            <tr>
+                                                <th style="width: 35%;">Shri Gurudatta Supplier</th>
+                                                <th>-</th>
+                                                <th>9860274935</th>
+                                                <th>₹ 15,000</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="card-box-table" id="table-pay" style="display: none;">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 40%;">NAME</td>
+                                                <td style="width: 20%;">CATEGORY</td>
+                                                <td style="width: 20%;">CONTACT NUMBER</td>
+                                                <td style="width: 20%;">CLOSING BALANCE</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="rupees-card">
+                                        <img src="assets/img/rupees-card.png" alt="Rupees Card">
+                                        <h2>No transactions available to generate report</h2>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -448,7 +571,6 @@
     </main>
     <!-- End #main -->
 
-
     <!-- Vendor JS Files -->
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -458,9 +580,42 @@
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        document.getElementById('btn-all').addEventListener('click', function () {
+            showTable('table-all');
+        });
+        document.getElementById('btn-collect').addEventListener('click', function () {
+            showTable('table-collect');
+        });
+        document.getElementById('btn-pay').addEventListener('click', function () {
+            showTable('table-pay');
+        });
+        function showTable(tableId) {
+            // Hide all tables
+            var tables = document.querySelectorAll('.card-box-table');
+            tables.forEach(function (table) {
+                table.style.display = 'none';
+            });
+            // Show the selected table
+            document.getElementById(tableId).style.display = 'block';
+        }
+        // Show the first table by default
+        showTable('table-all');
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#selectOption').change(function () {
+                var selectedValue = $(this).val();
+                if (selectedValue === '2') {
+                    $('#selectModal').modal('show');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

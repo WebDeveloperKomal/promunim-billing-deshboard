@@ -370,26 +370,18 @@
                         <div class="col-12" id="b1">
                             <div class="card recent-sales overflow-auto">
                                 <h6>
-                                    <button type="button" class="btn btn-link"
-                                        onclick="toggleSection('b2b')">B2B</button>
-                                    <button type="button" class="btn btn-link"
-                                        onclick="toggleSection('b2cl')">B2CL</button>
-                                    <button type="button" class="btn btn-link"
-                                        onclick="toggleSection('b2cs')">B2CS</button>
-                                    <button type="button" class="btn btn-link"
-                                        onclick="toggleSection('cdnr')">CDNR</button>
-                                    <button type="button" class="btn btn-link"
-                                        onclick="toggleSection('cdnur')">CDNUR</button>
-                                    <button type="button" class="btn btn-link"
-                                        onclick="toggleSection('exemp')">EXEMP</button>
-                                    <button type="button" class="btn btn-link"
-                                        onclick="toggleSection('hsn')">HSN</button>
+                                    <button type="button" class="btn btn-link" id="btn-b2b">B2B</button>
+                                    <button type="button" class="btn btn-link" id="btn-b2cl">B2CL</button>
+                                    <button type="button" class="btn btn-link" id="btn-b2cs">B2CS</button>
+                                    <button type="button" class="btn btn-link" id="btn-cdnr">CDNR</button>
+                                    <button type="button" class="btn btn-link" id="btn-cdnur">CDNUR</button>
+                                    <button type="button" class="btn btn-link" id="btn-exemp">EXEMP</button>
+                                    <button type="button" class="btn btn-link" id="btn-hsn">HSN</button>
                                 </h6>
                                 <hr class="line">
 
                                 <!-- buttons -->
-
-                                <div id="b2b" class="table-container active">
+                                <div id="table-b2b" class="table-container">
                                     <!-- Content for B2B section -->
                                     <div class="row">
                                         <div class="col">
@@ -397,19 +389,22 @@
                                                 Recipients:0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Number of
+                                            <button type="button" class="btn btn-default btn-custom ms-auto me-2">Number
+                                                of
                                                 Invoices:0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total Invoice
+                                            <button type="button" class="btn btn-default btn-custom ms-auto me-2">Total
+                                                Invoice
                                                 Value:₹0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total Taxable
+                                            <button type="button" class="btn btn-default btn-custom ms-auto me-2">Total
+                                                Taxable
                                                 Value:₹0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total
+                                            <button type="button" class="btn btn-default btn-custom ms-auto me-2">Total
                                                 Cess:₹0</button>
                                         </div>
                                     </div>
@@ -434,8 +429,20 @@
                                                         <td>CESS</td>
                                                         <td>Ecommerce GSTIN</td>
                                                     </tr>
-                                                    <tr>
-                                                        <th style="height: 40px;"></th>
+                                                    <tr style="height: 36px;">
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -446,7 +453,8 @@
                                         the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="b2cl" class="table-container" style="display: none;">
+
+                                <div id="table-b2cl" class="table-container" style="display: none;">
                                     <!-- Content for B2B section -->
                                     <div class="row">
                                         <div class="col">
@@ -454,11 +462,13 @@
                                                 Invoices:0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total Invoice
+                                            <button type="button" class="btn btn-default btn-custom ms-auto me-2">Total
+                                                Invoice
                                                 Value:₹0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total Taxable
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Taxable
                                                 Value:₹0</button>
                                         </div>
                                         <div class="col">
@@ -469,7 +479,7 @@
 
                                     <!-- Data Table -->
                                     <div class="card-box-table">
-                                        <table class="table table-bordered">
+                                        <table class="table table-bordered" id="table2">
                                             <tbody>
                                                 <tr>
                                                     <td>Invoice No.</td>
@@ -483,8 +493,17 @@
                                                     <td>CESS</td>
                                                     <td>Ecommerce GSTIN</td>
                                                 </tr>
-                                                <tr>
-                                                    <th style="height: 40px;"></th>
+                                                <tr style="height: 36px;">
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -494,15 +513,17 @@
                                         the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="b2cs" class="table-container" style="display: none;">
+                                <div id="table-b2cs" class="table-container" style="display: none;">
                                     <!-- Content for B2CS section -->
                                     <div class="row">
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total Invoice
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Invoice
                                                 Value:₹0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total Taxable
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Taxable
                                                 Value:₹0</button>
                                         </div>
                                         <div class="col">
@@ -524,8 +545,14 @@
                                                     <td>CESS</td>
                                                     <td>Ecommerce GSTIN</td>
                                                 </tr>
-                                                <tr>
-                                                    <th style="height: 40px;"></th>
+                                                <tr style="height: 36px;">
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -535,7 +562,7 @@
                                         the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="cdnr" class="table-container" style="display: none;">
+                                <div id="table-cdnr" class="table-container" style="display: none;">
                                     <!-- Content for CDNR section -->
                                     <div class="row">
                                         <div class="col">
@@ -543,15 +570,18 @@
                                                 Recipients:0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Number of
+                                            <button type="button" class="btn btn-default btn-custom">Number
+                                                of
                                                 Notes:0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total Note
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Note
                                                 Value:₹0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total Taxable
+                                            <button type="button" class="btn btn-default btn-custom">Total
+                                                Taxable
                                                 Value:₹0</button>
                                         </div>
                                         <div class="col">
@@ -580,8 +610,20 @@
                                                         <td>Taxable Value</td>
                                                         <td>Cases Amount</td>
                                                     </tr>
-                                                    <tr>
-                                                        <th style="height: 40px;"></th>
+                                                    <tr style="height: 36px;">
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -592,7 +634,7 @@
                                         the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="cdnur" class="table-container" style="display: none;">
+                                <div id="table-cdnur" class="table-container" style="display: none;">
                                     <!-- Content for CDNUR section -->
                                     <div class="row">
                                         <div class="col">
@@ -629,8 +671,17 @@
                                                     <td>Taxable Value</td>
                                                     <td>CESS</td>
                                                 </tr>
-                                                <tr>
-                                                    <th style="height: 40px;"></th>
+                                                <tr style="height: 36px;">
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -640,7 +691,7 @@
                                         the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="exemp" class="table-container" style="display: none;">
+                                <div id="table-exemp" class="table-container" style="display: none;">
                                     <!-- Content for EXEMP section -->
                                     <div class="row">
                                         <div class="col">
@@ -648,11 +699,13 @@
                                                 Supplies:₹0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total Exempted
+                                            <button type="button" class="btn btn-default btn-custom ms-auto me-2">Total
+                                                Exempted
                                                 Supplies:₹0</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-default btn-custom">Total Non-GST
+                                            <button type="button" class="btn btn-default btn-custom ms-auto me-2">Total
+                                                Non-GST
                                                 Supplies:₹0</button>
                                         </div>
                                     </div>
@@ -678,7 +731,8 @@
                                         the data in this report at the time of filing to avoid any errors.</h5>
                                 </div>
 
-                                <div id="hsn" class="table-container" style="display: none;">
+
+                                <div id="table-hsn" class="table-container" style="display: none;">
                                     <!-- Content for HSN section -->
                                     <div class="row">
                                         <div class="col">
@@ -730,8 +784,19 @@
                                                         <td>Taxable Value</td>
                                                         <td>Cess Amount</td>
                                                     </tr>
-                                                    <tr>
-                                                        <th style="height: 40px;"></th>
+                                                    <tr style="height: 36px;">
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -772,22 +837,38 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-        function toggleSection(sectionId) {
-            // Hide all sections
-            var sections = document.getElementsByClassName('table-container');
-            for (var i = 0; i < sections.length; i++) {
-                sections[i].classList.remove('active');
-            }
-
-            // Display the clicked section
-            var section = document.getElementById(sectionId);
-            if (section) {
-                section.classList.add('active');
-            }
-
-            // Optionally, you can load data into the table of the active section here
-            // Example: fetchDataForSection(sectionId);
+        document.getElementById('btn-b2b').addEventListener('click', function () {
+            showTable('table-b2b');
+        });
+        document.getElementById('btn-b2cl').addEventListener('click', function () {
+            showTable('table-b2cl');
+        });
+        document.getElementById('btn-b2cs').addEventListener('click', function () {
+            showTable('table-b2cs');
+        });
+        document.getElementById('btn-cdnr').addEventListener('click', function () {
+            showTable('table-cdnr');
+        });
+        document.getElementById('btn-cdnur').addEventListener('click', function () {
+            showTable('table-cdnur');
+        });
+        document.getElementById('btn-exemp').addEventListener('click', function () {
+            showTable('table-exemp');
+        });
+        document.getElementById('btn-hsn').addEventListener('click', function () {
+            showTable('table-hsn');
+        });
+        function showTable(tableId) {
+            // Hide all tables
+            var tables = document.querySelectorAll('.table-container');
+            tables.forEach(function (table) {
+                table.style.display = 'none';
+            });
+            // Show the selected table
+            document.getElementById(tableId).style.display = 'block';
         }
+        // Show the first table by default
+        showTable('table-b2b');
     </script>
 </body>
 
