@@ -422,16 +422,16 @@ h6 {
     background-color: white;
     margin-top: -1px;
     color: #636363;
-    margin-left: 327px;
+    margin-left: 8px;
     text-align: left;
     font-size: 12px;
     border-radius: 10px;
 }
 
-#dropdownMenuButton:hover {
+/* #dropdownMenuButton:hover {
     background-color: #3BB161;
     color: white;
-}
+} */
 
 .btn-light img {
     margin-left: -10px;
@@ -706,7 +706,6 @@ tr {
     margin-left: 10px;
 }
 
-
 /* ------------------------------------------------------------------------- */
 
 
@@ -719,6 +718,16 @@ tr {
 hr {
     size: 1px;
     margin-top: -11px;
+}
+
+.btn-light {
+    color: #004C8C;
+    border-radius: 15px;
+}
+
+.btn-light:hover {
+    background-color: #3BB161;
+    color: white;
 }
 
 .sidebar .btn {
@@ -749,7 +758,7 @@ hr {
     border: none;
     font-size: 14px;
     width: 121px;
-    margin-left: 947px;
+    margin-left: 948px;
     border-radius: 10px;
 }
 
@@ -788,16 +797,18 @@ hr {
 }
 
 /* ---------------button------------- */
-
 .test {
     width: 32px;
     height: 32px;
     background-color: #004C8C;
-
 }
 
 .test .image1 {
     margin-top: -312px;
+}
+
+.btn-light img {
+    margin-left: -10px;
 }
 
 .btn-danger img {
@@ -815,17 +826,6 @@ hr {
 
 .btn-info {
     width: 300px;
-}
-
-.modal-title {
-    margin-left: 260px;
-}
-
-/* --------------model----------------- */
-
-.modal-content {
-    width: 762px;
-    height: 557px;
 }
 
 .form-check {
@@ -862,6 +862,21 @@ hr {
     border-radius: 15px;
 }
 
+.rupees-card img {
+    margin-top: -395px;
+    margin-left: 486px;
+    position: absolute;
+}
+
+.rupees-card h2 {
+    margin-top: -303px;
+    margin-left: 348px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #004C8C;
+    position: absolute;
+}
+
 .dropdown-toggle::after {
     display: inline-block;
     margin-left: .255em;
@@ -876,21 +891,87 @@ hr {
     color: gold;
 }
 
+
 .table {
     margin-left: 15px;
-    margin-top: 14px;
+    margin-top: 50px;
     width: 97%;
 }
 
 .img-calendar img {
-    margin-top: -25px;
-    margin-left: 215px;
+    margin-top: -26px;
+    margin-left: 260px;
     position: absolute;
 }
 
-.img-arrow img {
+.btn-second2 {
+    width: 155px;
+    background-color: white;
+    margin-top: -32px;
+    padding: 1px 14px;
+    color: #636363;
+    margin-left: 522px;
+    text-align: left;
+    font-size: 12px;
+    border-radius: 10px;
+    height: 31px;
+    border: none;
+    position: absolute;
+}
+
+.btn-second2:hover {
+    background-color: #3BB161;
+    color: white;
+}
+
+.second-btn2 img {
     margin-top: -20px;
-    margin-left: 285px;
+    margin-left: 655px;
+    position: absolute;
+}
+
+.btn-second3 {
+    width: 211px;
+    background-color: white;
+    padding: 1px 14px;
+    margin-top: -32px;
+    color: #636363;
+    margin-left: 13px;
+    text-align: left;
+    font-size: 12px;
+    border-radius: 10px;
+    height: 31px;
+    border: none;
+    position: absolute;
+}
+
+.btn-second3:hover {
+    background-color: #3BB161;
+    color: white;
+}
+
+.second-btn3 img {
+    margin-top: -20px;
+    margin-left: 199px;
+    position: absolute;
+}
+
+.table-live {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: -635px;
+    margin-left: 20px;
+    width: 1034px;
+    height: 69px;
+    position: absolute;
+}
+
+.table-live h2 {
+    margin-top: 0px;
+    margin-left: -1px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2D2D2D;
     position: absolute;
 }
 
@@ -898,70 +979,34 @@ hr {
     color: #004C8C;
 }
 
+.btn-second4 {
+    width: 148px;
+    background-color: white;
+    margin-top: -32px;
+    padding: 1px 14px;
+    color: #636363;
+    margin-left: 687px;
+    text-align: left;
+    font-size: 12px;
+    border-radius: 10px;
+    height: 31px;
+    border: none;
+    position: absolute;
+}
+
+.btn-second4:hover {
+    background-color: #3BB161;
+    color: white;
+}
+
+.second-btn4 img {
+    margin-top: -20px;
+    margin-left: 812px;
+    position: absolute;
+}
+
 .table.table-bordered td {
     color: #2D2D2D;
-    font-size: 12px;
     font-weight: bold;
     background-color: rgba(59, 177, 97, 0.15);
-}
-
-#dropdownMenuButton {
-    width: 296px;
-    background-color: white;
-    margin-top: -10px;
-    color: black;
-    margin-left: -47px;
-    text-align: left;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-#dropdownMenuButton1 {
-    width: 307px;
-    background-color: white;
-    margin-top: -10px;
-    color: black;
-    margin-left: 5px;
-    text-align: left;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-.form-select {
-    width: 171px;
-    height: 37px;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-.btn-primary {
-    width: 111px;
-    height: 37px;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    font-size: 12px;
-}
-
-.btn-secondary {
-    width: 120px;
-    height: 37px;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    font-size: 12px;
-}
-
-.bi-whatsapp {
-    color: #25D366;
-}
-
-.table-container {
-    border: 1px solid rgb(154, 149, 149);
-    height: 71px;
-    font-size: 12px;
-}
-
-.table-container h6 {
-    font-size: 12px;
 }

@@ -64,7 +64,7 @@ h6 {
     font-weight: 600;
     color: #004C8C;
     font-family: 'Comfortaa';
-    margin-left: 5px;
+    margin-left: 11px;
 }
 
 /*--------------------------------------------------------------
@@ -417,21 +417,22 @@ h6 {
 --------------------------------------------------------------*/
 
 
-#dropdownMenuButton {
-    width: 290px;
+/* #dropdownMenuButton {
+    width: 219px;
     background-color: white;
     margin-top: -1px;
     color: #636363;
-    margin-left: 327px;
+    margin-left: 142px;
     text-align: left;
     font-size: 12px;
     border-radius: 10px;
-}
-
+    height: 33px;
+} */
+/* 
 #dropdownMenuButton:hover {
     background-color: #3BB161;
     color: white;
-}
+} */
 
 .btn-light img {
     margin-left: -10px;
@@ -465,7 +466,7 @@ h6 {
 
 /* Info Cards */
 .table {
-    margin-left: 15px;
+    margin-left: -1px;
 }
 
 /* Recent Sales */
@@ -474,7 +475,7 @@ h6 {
     margin-left: 4px;
     width: 99%;
     height: 654px;
-    margin-top: 18px;
+    margin-top: -10px;
     border: 1px solid rgb(153, 149, 149);
 }
 
@@ -716,9 +717,39 @@ tr {
     margin-top: -14px;
 }
 
+
+.dashboard .info-card {
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
 hr {
     size: 1px;
-    margin-top: -11px;
+    margin-top: -35px;
+}
+
+.col-12 .card-body {
+    height: 703px;
+    border-color: black;
+    border-radius: 20px;
+
+}
+
+.col-12 {
+    margin-top: -26px;
+    margin-left: 1px;
+
+}
+
+
+.btn-light {
+    color: #004C8C;
+    border-radius: 10px;
+}
+
+.btn-light:hover {
+    background-color: #3BB161;
+    color: white;
 }
 
 .sidebar .btn {
@@ -743,14 +774,17 @@ hr {
     margin-left: 0px;
 }
 
+.btn-margin-left {
+    margin-left: 1220px;
+    background-color: #3BB161;
+    color: white;
+    border: none;
+}
+
 .btn-margin-top {
     background-color: #3BB161;
-    color: #004C8C;
+    color: white;
     border: none;
-    font-size: 14px;
-    width: 121px;
-    margin-left: 947px;
-    border-radius: 10px;
 }
 
 .btn-margin-left:hover {
@@ -771,197 +805,312 @@ hr {
     margin-top: -50px;
 }
 
-.col-12 #b1 {
-    border-radius: 15px;
+/* ------------------------------------------------------ */
+.d-grid .btn-primary {
+    width: 200px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(223, 218, 218);
+    border-radius: 10px;
 }
 
-.col-md-4 .button {
-    margin-top: 10px;
+.d-grid .btn-primary:hover {
+    background-color: none;
+
 }
 
-#cap {
-    margin-left: 500px;
+.btn-primary img {
+    width: 25px;
+    height: 20px;
 }
 
-.modal-header .btn-close {
-    margin-top: -34px;
+.d-grid .btn-secondary {
+    width: 200px;
+    margin-left: 24px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(223, 218, 218);
+    border-radius: 10px;
 }
 
-/* ---------------button------------- */
+.btn-secondary img {
+    width: 25px;
+    height: 20px;
+}
 
-.test {
-    width: 32px;
-    height: 32px;
+.d-grid .btn-success {
+    width: 200px;
+    margin-top: -60px;
+    margin-left: 450px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(223, 218, 218);
+    border-radius: 10px;
+}
+
+.btn-success img {
+    width: 25px;
+    height: 20px;
+}
+
+
+/* -------------------------------------------------------------- */
+
+.dropdown-menu {
+    width: 200px;
+}
+
+.col-md-2 .btn-primary {
+    width: 287px;
+    margin-top: -20px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(175, 170, 170);
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.col-md-2 .btn-secondary {
+    width: 219px;
+    height: 33px;
+    margin-top: -4px;
+    margin-left: 6px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(175, 170, 170);
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.col-md-2 .btn-danger {
+    width: 197px;
+    margin-top: -20px;
+    margin-left: 40px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(175, 170, 170);
+    border-radius: 10px;
+}
+
+.dropdown-item img {
+    margin-left: 100px;
+}
+
+.btn-success {
+    margin-left: 924px;
+    margin-top: -110px;
+    background-color: #3BB161;
+    border: none;
+    border-radius: 10px;
+    width: 144px;
+    height: 33px;
+    font-size: 12px;
+}
+
+.btn-success:hover {
+    background-color: #3BB161;
+}
+
+.bi-calendar2-month {
+    margin-left: 10px;
+}
+
+.dropdown-menu.show {
+    width: 215px;
+    border-radius: 13px;
+}
+
+.btn-dark {
+    background-color: #3BB161;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 53px;
+    height: 33px;
+    margin-left: 234px;
+    margin-top: -58px;
+}
+
+.btn-dark:hover {
+    background-color: #3BB161;
+    color: white;
+}
+
+#drop {
+    width: 150px;
+}
+
+.bi-back {
+    color: #3BB161;
+}
+
+.bi-back:hover {
+    color: white;
+}
+
+#btn1 {
+    background-color: #3BB161;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 37px;
+    border-radius: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-left: 860px;
+    margin-top: -105px;
+}
+
+#btn2 {
+    background-color: #3BB161;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 37px;
+    border-radius: 10px;
+    margin-left: 750px;
+    font-size: 14px;
+    margin-top: -56px;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0px;
+    max-width: 762px;
+    height: 237px;
+}
+
+.modal-title {
+    margin-left: 90px
+}
+
+.btn-primary {
+    background-color: #3BB161;
+    color: white;
+    border: none;
+    width: 100px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
     background-color: #004C8C;
-
+    color: white;
 }
 
-.test .image1 {
-    margin-top: -312px;
-}
-
-.btn-danger img {
-    margin-left: -6px;
+.btn-danger {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(179, 176, 176);
+    width: 100px;
 }
 
 .btn-danger:hover {
     background-color: #3BB161;
-    border: none;
+    color: white;
+    border: 1px solid rgb(179, 176, 176);
 }
 
-#dropdownid {
-    width: 150px;
+
+
+.btn-outline-warning {
+    margin-top: -103px;
+    margin-left: 4px;
+    color: #3BB161;
+    width: 100px;
+    height: 37px;
+    border-color: #3BB161;
 }
 
-.btn-info {
-    width: 300px;
+.btn-outline-warning {
+    --bs-btn-color: #3BB161;
+    --bs-btn-border-color: #3BB161;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #3BB161;
+    --bs-btn-hover-border-color: #3BB161;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #3BB161;
+    --bs-btn-active-border-color: #3BB161;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #3BB161;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #3BB161;
+    --bs-gradient: none;
+    border-color: none;
 }
 
-.modal-title {
-    margin-left: 260px;
+.box1 {
+    width: 348px;
+    height: 208px;
+    background-color: white;
+    border-radius: 10px;
 }
 
-/* --------------model----------------- */
-
-.modal-content {
-    width: 762px;
-    height: 557px;
+.box2 {
+    width: 700px;
+    height: 208px;
+    background-color: white;
+    border-radius: 10px;
 }
 
-.form-check {
-    margin-top: 30px;
-}
-
-.form-group {
-    margin-top: 20px;
+label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 900;
 }
 
 .form-control {
-    border-radius: 13px;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.btn-secondary {
-    width: 150px;
-    border: none;
-    margin-left: 200px;
-    margin-top: 30px;
-}
-
-.btn-primary {
-    width: 150px;
+.btn3 {
+    width: 144px;
+    height: 33px;
+    border-radius: 10px;
     background-color: #3BB161;
     color: white;
     border: none;
-    margin-top: 30px;
-    margin-left: 20px;
-}
-
-.dropdown-menu.show {
-    display: block;
-    width: 254px;
-    border-radius: 15px;
-}
-
-.dropdown-toggle::after {
-    display: inline-block;
-    margin-left: .255em;
-    vertical-align: .255em;
-    content: "";
-    border-bottom: 0;
-    border-left: .3em solid transparent;
-    display: none;
-}
-
-.bi-star-fill {
-    color: gold;
-}
-
-.table {
-    margin-left: 15px;
-    margin-top: 14px;
-    width: 97%;
-}
-
-.img-calendar img {
-    margin-top: -25px;
-    margin-left: 215px;
-    position: absolute;
-}
-
-.img-arrow img {
-    margin-top: -20px;
-    margin-left: 285px;
-    position: absolute;
-}
-
-.bi-chevron-left {
-    color: #004C8C;
-}
-
-.table.table-bordered td {
-    color: #2D2D2D;
     font-size: 12px;
-    font-weight: bold;
-    background-color: rgba(59, 177, 97, 0.15);
+    margin-top: 50px;
+    margin-left: 70px;
 }
 
-#dropdownMenuButton {
-    width: 296px;
-    background-color: white;
-    margin-top: -10px;
-    color: black;
-    margin-left: -47px;
-    text-align: left;
-    font-size: 12px;
-    border-radius: 10px;
+@media (min-width: 576px) {
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.333333%;
+        padding-left: 19px;
+    }
 }
 
-#dropdownMenuButton1 {
-    width: 307px;
-    background-color: white;
-    margin-top: -10px;
-    color: black;
-    margin-left: 5px;
-    text-align: left;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-.form-select {
-    width: 171px;
-    height: 37px;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-.btn-primary {
-    width: 111px;
-    height: 37px;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    font-size: 12px;
-}
-
-.btn-secondary {
-    width: 120px;
-    height: 37px;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    font-size: 12px;
-}
-
-.bi-whatsapp {
-    color: #25D366;
-}
-
-.table-container {
-    border: 1px solid rgb(154, 149, 149);
-    height: 71px;
-    font-size: 12px;
-}
-
-.table-container h6 {
-    font-size: 12px;
+@media (min-width: 992px) {
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-top: -35px;
+    }
 }

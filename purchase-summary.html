@@ -24,7 +24,7 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
     <!-- Template Main CSS File -->
-    <link href="party-statement-ledger1.css" rel="stylesheet">
+    <link href="purchase.summary.css" rel="stylesheet">
 </head>
 
 
@@ -313,8 +313,8 @@
     <!-- main section -->
     <main id="main" class="main">
         <div class="pagetitle">
-            <h1><a href="reports.html"><i class="bi bi-chevron-left" style="color: #004C8C;"></i></a>&nbsp;Party
-                Statement (Ledger)
+            <h1><a href="reports.html"><i class="bi bi-chevron-left" style="color: #004C8C;"></i></a>&nbsp;Purchase
+                Summary
             </h1>
             <button type="button" class="btn btn-light btn-margin-top"><i
                     class="bi bi-star-fill"></i>&nbsp;&nbsp;&nbsp;Favourite
@@ -330,34 +330,9 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-md-4">
-                            <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Sample Party 3</button>
-                            <div class="img-arrow">
-                                <img src="assets/img/down-black-arrow.png" alt="">
-                            </div>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Sample Party 3</a>
-                                <a class="dropdown-item" href="#">Sample Party 4</a>
-                                <a class="dropdown-item" href="#">Sample Party 5</a>
-                                <a class="dropdown-item" href="#">ACADAJ Learning OPC Pvt Ltd</a>
-                                <a class="dropdown-item" href="#">ALESHWAR CAR GARAGE</a>
-                                <a class="dropdown-item" href="#">Bagban Restaurant</a>
-                                <a class="dropdown-item" href="#">Carbana Autotech Pvt Ltd</a>
-                                <a class="dropdown-item" href="#">Cash Sale</a>
-                                <a class="dropdown-item" href="#">DS ENTERPRISES</a>
-                                <a class="dropdown-item" href="#">German Moters</a>
-                                <a class="dropdown-item" href="#">Sample Party 1</a>
-                                <a class="dropdown-item" href="#">Sample Party 2</a>
-                                <a class="dropdown-item" href="#">Shri Gurudatta Supplier</a>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4">
                             <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuButton"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                This Week 15 April 2024 - 15 April 2024 </button>
+                                This Week 8 April 2024 - 12 April 2024 </button>
                             <div class="img-calendar">
                                 <img src="assets/img/calendar-line-icon 1.png" alt="">
                             </div>
@@ -377,72 +352,40 @@
                             </div>
                         </div>
 
-
-                        <!-- <div class="col-md-4 my-0">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Downlaod Excel</option>
-                                <option value="1">Download Pdf</option>
-                            </select>
-                            <button type="button" class="btn btn-primary"><img src="assets/img/print.png"
-                                    alt="">&nbsp;&nbsp;Print
-                                Pdf</button>
-                            <button type="button" class="btn btn-secondary">Whatsapp&nbsp;&nbsp;<i
-                                    class="bi bi-whatsapp"></i></button>
-                        </div> -->
-
-
                         <!-- Recent Sales -->
                         <div class="col-12" id="b1">
                             <div class="card recent-sales overflow-auto">
                                 <div class="card-box-table">
-                                    <!--  -->
-                                    <div class="table-container">
-                                        <table class="table-bordered box">
-                                            <h6>Party Name: Sample Party 3</h6>
-                                            <h6>Opening Balance: 10,000</h6>
-                                            <h6>Closing Balance: 10,000</h6>
-                                        </table>
-                                    </div>
-                                    <!--  -->
                                     <table class="table table-bordered">
                                         <tbody>
                                             <tr>
-                                                <td style="width: 10%;">DATE</td>
-                                                <td style="width: 13%;">TRANSACTION TYPE</td>
-                                                <td style="width: 13%;">TRANSACTION NO.</td>
-                                                <td style="width: 13%;">ORIGINAL INVOICE NO</td>
-                                                <td style="width: 13%;">CREDIT</td>
-                                                <td style="width: 13%;">DEBIT</td>
-                                                <td style="width: 15%;">TDS BY PARTY</td>
-                                                <td style="width: 15%;">TDS BY SELF</td>
-                                                <td style="width: 15%;">PAYMENT MODE</td>
-                                            </tr>
-                                            <tr>
-                                                <th></th>
-                                                <th>Opening Balance</th>
-                                                <th>-</th>
-                                                <th>-</th>
-                                                <th>-</th>
-                                                <th>₹ 10,000</th>
-                                                <th></th>
-                                                <th></th>
-                                                <th></th>
-                                            </tr>
-                                            <tr>
-                                                <th></th>
-                                                <th>Opening Balance</th>
-                                                <th>-</th>
-                                                <th>-</th>
-                                                <th>-</th>
-                                                <th>₹ 10,000</th>
-                                                <th></th>
-                                                <th></th>
-                                                <th></th>
+                                                <td>PURCHASE NO</th>
+                                                <td>ORIGINAL INVOICE NO.</td>
+                                                <td>PURCHASE DATE</td>
+                                                <td>PARTY NAME</td>
+                                                <td>PURCHASE AMOUNT</th>
+                                                <td>NOTES</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="live-table">
+                            <div class="table-live">
+                                <h2>Total Purchases: ₹ 0</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rupees-card">
+                        <img src="assets/img/rupees-card.png">
+                        <h2>No transactions available to generate report</h2>
+                    </div>
+
+                    <div class="color-box">
+                        <div class="color-light">
                         </div>
                     </div>
                 </div>
@@ -455,6 +398,7 @@
     </main>
     <!-- End #main -->
 
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -464,6 +408,7 @@
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 </body>
 
