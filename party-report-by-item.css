@@ -418,11 +418,12 @@ h6 {
 
 
 #dropdownMenuButton {
-    width: 290px;
+    width: 296px;
+    height: 37px;
     background-color: white;
-    margin-top: -1px;
+    margin-top: 0px;
     color: #636363;
-    margin-left: 307px;
+    margin-left: 378px;
     text-align: left;
     font-size: 12px;
     border-radius: 10px;
@@ -902,8 +903,8 @@ hr {
 }
 
 .img-calendar img {
-    margin-top: -25px;
-    margin-left: 568px;
+    margin-top: -27px;
+    margin-left: 629px;
     position: absolute;
 }
 
@@ -916,4 +917,12 @@ hr {
     font-size: 12px;
     font-weight: bold;
     background-color: rgba(59, 177, 97, 0.15);
+}
+
+.form-select {
+    width: 363px;
+    height: 37px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: -353px
 }

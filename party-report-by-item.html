@@ -77,7 +77,7 @@
 
 
             <li class="nav-item">
-                <a class="nav-link " href="create-party.html">
+                <a class="nav-link " href="parties-create.html">
                     <img class="img-class2" src="assets/img/two.png">
                     <span>&nbsp;&nbsp;Parties</span>
                 </a>
@@ -294,6 +294,7 @@
             </li>
             <!-- End Blank Page Nav -->
 
+
             <div class="set">
                 <li class="nav-item-box">
                     <a class="collapsed-box" href="#">
@@ -349,12 +350,19 @@
                             </div>
                         </div>
 
-                        <div class="second-btn3">
-                            <button type="button" class="btn-second3">Search Item
-                            </button>
-                            <img src="assets/img/down-black-arrow.png">
-                        </div>
-
+                        <select id="pageSelector" class="form-select" aria-label="Default select example"
+                            onchange="redirectToPage()">
+                            <option selected>Search Item</option>
+                            <option value="party-report-by-item1.html">Digital Signature Certificate (DSC)</option>
+                            <option value="2">2 Year Validity</option>
+                            <option value="3">Director's Identification Number (DIN) Registration</option>
+                            <option value="4">2 Year Validity</option>
+                            <option value="5">Gift Deed Drafting charges</option>
+                            <option value="6">New Director Addition Charges</option>
+                            <option value="7">ROC Compliance/Services</option>
+                            <option value="8">revocation of cancellation of gst registration</option>
+                            <option value="10">application GST REG-21/ GST REG-22</option>
+                        </select>
 
                         <!-- Recent Sales -->
                         <div class="col-12" id="b1">
@@ -374,13 +382,11 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="rupees-card">
                         <img src="assets/img/search-line-icon 1.png">
                         <h2>Select an Item first to see the reports</h2>
                     </div>
-
                     <div class="color-box">
                         <div class="color-light">
                         </div>
@@ -395,7 +401,6 @@
     </main>
     <!-- End #main -->
 
-
     <!-- Vendor JS Files -->
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -408,6 +413,16 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        function redirectToPage() {
+            var select = document.getElementById("pageSelector");
+            var selectedValue = select.value;
+
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
 </body>
 
 </html>
