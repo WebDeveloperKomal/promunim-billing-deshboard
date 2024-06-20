@@ -908,18 +908,8 @@ hr {
     width: 300px;
 }
 
-.modal-title {
-    margin-left: 260px;
-    font-size: 18px;
-}
-
 /* --------------model----------------- */
 
-.modal-content {
-    width: 762px;
-    height: 457px;
-    margin-left: 20px;
-}
 
 .form-check {
     margin-top: 30px;
@@ -982,4 +972,29 @@ h5 {
 label {
     display: inline-block;
     font-size: 12px;
+}
+
+#btn1 {
+    background-color: #3BB161;
+    color: white;
+    border: none;
+    width: 137px;
+    height: 37px;
+    border-radius: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-left: 826px;
+    margin-top: -56px;
+}
+
+#btn2 {
+    background-color: #3BB161;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 37px;
+    border-radius: 10px;
+    margin-left: 970px;
+    font-size: 14px;
+    margin-top: -105px;
 }

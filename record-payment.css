@@ -973,26 +973,6 @@ hr {
     margin-top: -56px;
 }
 
-.modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: var(--bs-modal-color);
-    pointer-events: auto;
-    background-color: var(--bs-modal-bg);
-    background-clip: padding-box;
-    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-    border-radius: var(--bs-modal-border-radius);
-    outline: 0px;
-    max-width: 762px;
-    height: 237px;
-}
-
-.modal-title {
-    margin-left: 90px
-}
-
 .btn-primary {
     background-color: #3BB161;
     color: white;
@@ -1054,6 +1034,7 @@ hr {
     height: 208px;
     background-color: white;
     border-radius: 10px;
+    border: 1px solid rgb(196, 192, 192);
 }
 
 .box2 {
@@ -1061,6 +1042,7 @@ hr {
     height: 208px;
     background-color: white;
     border-radius: 10px;
+    border: 1px solid rgb(196, 192, 192);
 }
 
 label {

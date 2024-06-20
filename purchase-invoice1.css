@@ -908,18 +908,6 @@ hr {
     width: 300px;
 }
 
-.modal-title {
-    margin-left: 260px;
-    font-size: 18px;
-}
-
-/* --------------model----------------- */
-
-.modal-content {
-    width: 762px;
-    height: 457px;
-    margin-left: 20px;
-}
 
 .form-check {
     margin-top: 30px;

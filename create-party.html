@@ -348,8 +348,9 @@
                                     placeholder="Enter category name" required><br>
                                 <button type="button" class="btn btn-primary custom-button3" onclick="addCustom();">Add
                                     Custom Field</button>
-                                <input type="text" class="form-control" id="categoryName" style="display: none;"
-                                    placeholder="Enter category name" required><br>
+                                <div id="customFieldsContainer" class="mt-3">
+                                    <!-- New input fields will be added here -->
+                                </div>
                                 <!-- <button type="button" class="btn btn-primary custom-button4"><i
                                         class="bi bi-plus-lg"></i></button> -->
                             </div>
@@ -524,6 +525,25 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        function addCustom() {
+            // Get the container element
+            var container = document.getElementById('customFieldsContainer');
+
+            // Check if the container already has an input element
+            if (container.querySelector('input') === null) {
+                // Create a new input element
+                var newInput = document.createElement('input');
+                newInput.type = 'text';
+                newInput.className = 'form-control mt-2';
+                newInput.placeholder = 'Enter category name';
+                newInput.required = true;
+
+                // Append the new input element to the container
+                container.appendChild(newInput);
+            }
+        }
+    </script>
 </body>
 
 </html>

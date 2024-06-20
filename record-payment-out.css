@@ -725,7 +725,7 @@ tr {
 
 hr {
     size: 1px;
-    margin-top: -35px;
+    margin-top: -15px;
 }
 
 .col-12 .card-body {
@@ -758,11 +758,11 @@ hr {
 }
 
 .container {
-    margin-top: 30px;
-    background-color: #14582a;
-    width: 295px;
-    margin-left: -30px;
-    height: 130px;
+    margin-top: -34px;
+    background-color: white;
+    width: 97%;
+    margin-left: 16px;
+    height: 711px;
     border-radius: 10px;
 }
 
@@ -897,12 +897,12 @@ hr {
 }
 
 .btn-success {
-    margin-left: 924px;
+    margin-left: 887px;
     margin-top: -110px;
     background-color: #3BB161;
     border: none;
     border-radius: 10px;
-    width: 144px;
+    width: 182px;
     height: 33px;
     font-size: 12px;
 }
@@ -968,30 +968,11 @@ hr {
     width: 100px;
     height: 37px;
     border-radius: 10px;
-    margin-left: 750px;
+    margin-left: 966px;
     font-size: 14px;
     margin-top: -56px;
 }
 
-.modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: var(--bs-modal-color);
-    pointer-events: auto;
-    background-color: var(--bs-modal-bg);
-    background-clip: padding-box;
-    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-    border-radius: var(--bs-modal-border-radius);
-    outline: 0px;
-    max-width: 762px;
-    height: 237px;
-}
-
-.modal-title {
-    margin-left: 90px
-}
 
 .btn-primary {
     background-color: #3BB161;
@@ -1050,17 +1031,23 @@ hr {
 }
 
 .box1 {
-    width: 348px;
-    height: 208px;
+    width: 452px;
+    height: 226px;
     background-color: white;
+    border: 1px solid rgb(138, 133, 133);
     border-radius: 10px;
+    margin-top: 60px;
+    margin-left: -25px;
 }
 
 .box2 {
-    width: 700px;
-    height: 208px;
+    width: 589px;
+    height: 226px;
     background-color: white;
+    border: 1px solid rgb(138, 133, 133);
     border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 96px;
 }
 
 label {
@@ -1095,8 +1082,12 @@ label {
     color: white;
     border: none;
     font-size: 12px;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-left: 70px;
+}
+
+.mb-3 {
+    margin-top: 1rem !important;
 }
 
 @media (min-width: 576px) {

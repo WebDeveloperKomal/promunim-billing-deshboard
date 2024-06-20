@@ -1043,7 +1043,7 @@ hr {
     border-radius: var(--bs-modal-border-radius);
     outline: 0px;
     max-width: 762px;
-    height: 237px;
+    height: 328px;
 }
 
 .modal-title {
@@ -1087,4 +1087,8 @@ tr {
     border-style: solid;
     border-width: 0;
     font-size: 12px;
+}
+
+.hidden {
+    display: none;
 }

@@ -301,47 +301,13 @@
     <!-- main section -->
     <main id="main" class="main">
         <div class="pagetitle">
-            <h1>Record Payment</h1>
-            <button type="button" class="btn btn-secondary btn-sm" id="btn2" data-bs-toggle="modal"
-                data-bs-target="#settingModal">
+            <h1>Record Payment Out</h1>
+            <button type="button" class="btn btn-secondary btn-sm" id="btn2">
                 <i class="bi bi-gear-fill"></i> Setting
             </button>
-            <button type="button" class="btn btn-primary btn-sm" id="btn1">
-                Save</button>
-            <button type="button" class="btn btn-outline-warning">Cancel</button>
             <hr>
         </div>
         <!-- End Page Title -->
-
-
-        <!-- model start -->
-        <div class="modal fade" id="settingModal" tabindex="-1" aria-labelledby="settingModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="settingModalLabel">Quick Quotation Setting
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <!-- Toggle Switch -->
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="toggleSwitch">
-                            <label class="form-check-label" for="toggleSwitch">Quotation Prefix & Sequence
-                                Number</label>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <!-- Cancel Button -->
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-                        <!-- Save Button -->
-                        <button type="button" class="btn btn-primary">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- model end -->
-
 
         <section class="section dashboard">
             <div class="row">
@@ -370,73 +336,72 @@
                     </div>
                     <button type="button" class="btn btn-dark"><i class="bi bi-search"></i></button>
                 </div>
-
                 <div class="button">
                     <button type="button" class="btn btn-success">
-                        Create Payment In
+                        Create Payment Out
                     </button>
                 </div>
 
                 <!-- Left side columns -->
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="box1">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="partyDropdown">Party Name</label>
-                                        <select class="form-control" id="partyDropdown">
-                                            <option value="">Search Party by name or number</option>
-                                            <hr>
-                                            <option value="party1">ACADAJ Learning OPC Pvt Ltd</option>
-                                            <hr>
-                                            <option value="party2">ALESHWAR CAR GARAGE</option>
-                                            <hr>
-                                            <option value="party3">Carbana Autotech Pvt Ltd</option>
-                                            <hr>
-                                            <option value="party3">Bagban Restaurant</option>
-                                            <hr>
-                                            <option value="party3">German Moters</option>
-                                            <!-- Add more options as needed -->
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="formGroupExampleInput2">Enter Payment Amount</label>
-                                        <input type="text" class="form-control" id="formGroupExampleInput2"
-                                            placeholder="0">
-                                    </div>
-                                </form>
+                <div class="container">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="box1">
+                                    <form>
+                                        <div class="form-group m-2">
+                                            <label for="partyDropdown">Party Name</label>
+                                            <select class="form-control" id="partyDropdown">
+                                                <option value="">Search Party by name or number</option>
+                                                <option value="party1">A</option>
+                                                <option value="party2">B</option>
+                                                <option value="party3">C</option>
+                                                <option value="party3">D</option>
+                                                <!-- Add more options as needed -->
+                                            </select>
+                                        </div>
+                                        <div class="form-group m-2">
+                                            <label for="formGroupExampleInput2">Enter Payment Amount</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput2"
+                                                placeholder="0">
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
 
-
-                        <div class="col-sm-8">
-                            <div class="box2">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <label for="formGroupExampleInput">Payment Date</label>
-                                            <input type="date" class="form-control" placeholder="First name">
+                            <div class="col-sm-8">
+                                <div class="box2">
+                                    <form>
+                                        <div class="row m-2">
+                                            <div class="col-4">
+                                                <label for="formGroupExampleInput">Payment Date</label>
+                                                <input type="date" class="form-control" placeholder="First name">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="paymentMode">Payment Mode</label>
+                                                <select id="paymentMode" class="form-control">
+                                                    <option value="cash">Cash</option>
+                                                    <option value="credit">Bank</option>
+                                                    <option value="debit">Cheque</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="formGroupExampleInput">Payment Out Number</label>
+                                                <input type="text" class="form-control" placeholder="1">
+                                            </div>
                                         </div>
-                                        <div class="col-4">
-                                            <label for="formGroupExampleInput">Payment Mode</label>
-                                            <input type="text" class="form-control" placeholder="Cash">
+                                        <div class="row mb-3 m-2">
+                                            <div class="col">
+                                                <label for="formGroupExampleInput">Notes</label>
+                                                <input type="text" class="form-control" placeholder="Enter Notes"
+                                                    style="height: 76px;">
+                                            </div>
                                         </div>
-                                        <div class="col-4">
-                                            <label for="formGroupExampleInput">Payment Out Number</label>
-                                            <input type="text" class="form-control" placeholder="1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <label for="formGroupExampleInput">Notes</label>
-                                            <input type="text" class="form-control" placeholder="Enter Notes">
-                                        </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
+                                <img src="assets/img/record-payment-out.png" alt="" class="img-fluid"><br>
+                                <button type="button" class="btn3" id="selectPartyButton">Select Party</button>
                             </div>
-                            <button type="button" class="btn3" id="selectPartyButton">Select Party</button>
                         </div>
                     </div>
                 </div>
@@ -444,7 +409,6 @@
         </section>
     </main>
     <!-- End #main -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
