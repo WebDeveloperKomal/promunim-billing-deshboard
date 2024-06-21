@@ -322,65 +322,60 @@
                                 Pdf</button>
                             <img src="assets/img/print.png">
                         </div>
-
                         <select class="form-select1" aria-label="Default select example">
                             <option selected>Download Excel</option>
                             <option value="1">Download Pdf</option>
                         </select>
-
                         <select class="form-select2" aria-label="Default select example">
                             <option selected>All Categories</option>
                             <option value="1">abcde</option>
                             <option value="2">abcd</option>
                         </select>
-
-                        <select class="form-select3" aria-label="Default select example" id="selectOption">
-                            <option selected>Today - 15 April 2024</option>
-                            <option value="1">Today</option>
-                            <option value="2">As of previous
-                                fiscal year (Can be e-mailed only)</option>
-                        </select>
-
-                        <!-- data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" -->
-
-                        <!-- <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Today - 15 April 2024
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Today</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal1">As of
-                                    previous fiscal year (Can be e-mailed only)</a>
-                            </div>
-                        </div> -->
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Today</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">As of previous fiscal year (Can be e-mailed
+                                        only)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <!-- data-bs-toggle="modal" data-bs-target="#exampleModal" apply only button nd link model -->
-
-
-                        <!-- Modal start -->
+                        <!--Date Modal start -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog">
-                                <div class="modal-content">
+                                <div class="modal-content justify-content-center">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">E-mail Party Wise Outstanding
+                                            Report</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <p>This is the content of the modal.</p>
+                                        <p id="fiscalData" style="font-size: 14px; color: #595959;">We will send you the
+                                            previous fiscal year party wise
+                                            outstanding report to the email <br>below</p>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email*</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Enter your email">
+                                        </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-info"
                                             data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-danger">Save</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Modal end -->
+                        <!--Date Modal end -->
 
                         <!-- Recent Sales -->
                         <div class="col-12" id="b1">
@@ -389,7 +384,7 @@
                                     <button type="button" class="btn btn-outline-primary" id="btn-all">All</button>
                                     <button type="button" class="btn btn-outline-primary" id="btn-collect">To
                                         Collect<br>₹89521</button>
-                                    <button type="button" class="btn btn-outline-primary" id="btn-pay">To   
+                                    <button type="button" class="btn btn-outline-primary" id="btn-pay">To
                                         Pay<br>₹0</button>
                                 </div>
                                 <button type="button" class="btn btn-warning">GSTIN and Address can be viewed in excel
@@ -617,6 +612,10 @@
                     $('#selectModal').modal('show');
                 }
             });
+        });
+    </script>
+    <script>
+        document.getElementById('exampleModal').addEventListener('show.bs.modal', function (event) {
         });
     </script>
 </body>

@@ -262,7 +262,7 @@ h6 {
     padding: 20px;
     overflow-y: auto;
     /* scrollbar-width: thin; */
-    scrollbar-color: #aab7cf transparent;
+    scrollbar-color: #3bb161 transparent;
     box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
     background-color: #3bb161;
     border-radius: 10px;
@@ -908,9 +908,6 @@ hr {
     width: 300px;
 }
 
-/* --------------model----------------- */
-
-
 .form-check {
     margin-top: 30px;
 }
@@ -924,21 +921,21 @@ hr {
     font-size: 12px;
 }
 
-.btn-secondary {
+/* .btn-secondary {
     width: 150px;
     border: none;
     margin-left: 200px;
     margin-top: 30px;
-}
+} */
 
-.btn-primary {
+/* .btn-primary {
     width: 150px;
     background-color: #3BB161;
     color: white;
     border: none;
     margin-top: 30px;
     margin-left: 20px;
-}
+} */
 
 .dropdown-menu.show {
     display: block;
@@ -971,30 +968,24 @@ h5 {
 
 label {
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-#btn1 {
-    background-color: #3BB161;
-    color: white;
-    border: none;
-    width: 137px;
-    height: 37px;
-    border-radius: 10px;
-    font-size: 14px;
-    border-radius: 10px;
-    margin-left: 826px;
-    margin-top: -56px;
+.modal-title {
+    font-size: 18px;
+    margin-left: 124px;
 }
 
-#btn2 {
-    background-color: #3BB161;
-    color: white;
-    border: none;
-    width: 100px;
-    height: 37px;
-    border-radius: 10px;
-    margin-left: 970px;
-    font-size: 14px;
-    margin-top: -105px;
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 112%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
 }
