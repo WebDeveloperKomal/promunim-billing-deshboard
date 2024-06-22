@@ -476,7 +476,7 @@ h6 {
     margin-left: 4px;
     width: 99%;
     height: 654px;
-    margin-top: 18px;
+    margin-top: -15px;
     border: 1px solid rgb(153, 149, 149);
 }
 
@@ -886,12 +886,12 @@ hr {
 .btn-warning {
     width: 150px;
     height: 33px;
-    margin-left: 936px;
+    margin-left: 923px;
     background-color: #3BB161;
     color: white;
     border: none;
     border-radius: 10px;
-    margin-top: -34px;
+    margin-top: -61px;
     font-size: 12px;
 }
 

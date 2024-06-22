@@ -914,8 +914,7 @@
                                                             yet
                                                         </p>
                                                         <button type="button" class="btn btn-light" id="light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#customfieldsdModal">+
+                                                            data-bs-toggle="modal" data-bs-target="#customFieldsModal">+
                                                             Create
                                                             custom
                                                             field
@@ -935,23 +934,37 @@
                             <!--cusom details model end -->
 
                             <!--create custom field Modal start-->
-                            <div class="modal fade" id="customfieldsdModal" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="customFieldsModal" tabindex="-1"
+                                aria-labelledby="customFieldsModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Item Setting</h5>
+                                            <h5 class="modal-title" id="customFieldsModalLabel">Create Custom Field</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <!-- Modal body content here -->
-                                            This is the modal body.
+                                            <!-- Modal body content goes here -->
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="fieldName" class="form-label">Field Name</label>
+                                                    <input type="text" class="form-control" id="fieldName">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="fieldType" class="form-label">Field Type</label>
+                                                    <select class="form-select" id="fieldType">
+                                                        <option selected>Choose...</option>
+                                                        <option value="text">Text</option>
+                                                        <option value="number">Number</option>
+                                                        <option value="date">Date</option>
+                                                    </select>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Save</button>
+                                            </form>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
