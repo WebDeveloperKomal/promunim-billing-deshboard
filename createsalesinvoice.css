@@ -864,3 +864,11 @@ label {
     border-radius: .25em;
     background-color: rgba(217, 217, 217, 1);
 }
+
+.form-select {
+    width: 72px;
+    height: 21px;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 8.6px;
+}
