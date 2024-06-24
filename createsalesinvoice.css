@@ -872,3 +872,15 @@ label {
     font-weight: 600;
     line-height: 8.6px;
 }
+
+.modal-title {
+    font-size: 18px;
+}
+
+.custom-modal-size {
+    max-width: 1043px;
+}
+
+.custom-modal-size .modal-content {
+    height: 649px;
+}
