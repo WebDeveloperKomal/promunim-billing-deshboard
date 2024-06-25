@@ -458,9 +458,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer justify-content-center">
-                                                            <button type="button" class="btn btn-dark"
+                                                            <button type="button" class="btn btn-info"
                                                                 data-bs-dismiss="modal">Cancel</button>
-                                                            <button type="button" class="btn btn-primary">Done
+                                                            <button type="button" class="btn btn-warning">Done
                                                             </button>
                                                         </div>
                                                     </div>
@@ -494,6 +494,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <!-- New Table Section -->
                                     <div class="row mt-4">
                                         <div class="col-12">
@@ -565,14 +566,15 @@
                                                                     <div class="row">
                                                                         <div class="col">
                                                                             <button type="button"
-                                                                                class="btn btn-primary btn-block">Search
+                                                                                class="btn btn-danger btn-block">Search
                                                                                 Item</button>
                                                                         </div>
                                                                         <div class="col">
                                                                             <!-- Select dropdown for Select Category -->
                                                                             <div class="form-group">
                                                                                 <select class="form-control"
-                                                                                    id="categorySelect">
+                                                                                    id="categorySelect"
+                                                                                    style="font-size: 12px;border-radius: 10px; height: 33px;">
                                                                                     <option>Select Category</option>
                                                                                     <option>Clothing</option>
                                                                                     <option>Dairy</option>
@@ -697,9 +699,9 @@
                                                             </div>
                                                             <div class="modal-footer justify-content-center">
                                                                 <button type="button" class="btn btn-info"
-                                                                    data-dismiss="modal">Close</button>
+                                                                    data-dismiss="modal">Cancel</button>
                                                                 <button type="button"
-                                                                    class="btn btn-primary">Done</button>
+                                                                    class="btn btn-warning">Done</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -710,7 +712,8 @@
                                                     <!-- Add content for col-md-5 here -->
                                                     <div class="ms-auto justify-content-center"
                                                         style="width: 346px; height: 48px; border: 1px solid rgba(45, 45, 45, 1); text-align: center; font-size: 12px; font-weight:700;border-radius: 10px; color: rgba(45, 45, 45, 1);">
-                                                        <button type="button" class="btn btn-secondary">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-toggle="modal" data-target="#scanBarcodeModal">
                                                             <span class="d-flex align-items-center">
                                                                 <img src="assets/img/Group 1120.png" alt="Scan"
                                                                     class="me-2" style="width: 32px; height: 24.38px;">
@@ -719,6 +722,69 @@
                                                         </button>
                                                     </div>
                                                 </div>
+
+                                                <!-- Model Start -->
+                                                <div class="modal fade custom-modal" id="scanBarcodeModal" tabindex="-1"
+                                                    aria-labelledby="scanBarcodeModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title text-center"
+                                                                    id="scanBarcodeModalLabel">Add
+                                                                    Items</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <!-- Modal content goes here -->
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">ITEM NAME</th>
+                                                                            <th scope="col">ITEM CODE</th>
+                                                                            <th scope="col">SALES PRICE</th>
+                                                                            <th scope="col" id="purchasePriceHeader">
+                                                                                PURCHASE PRICE <i class="bi bi-x-circle"
+                                                                                    style="color: #3BB161;"></i></th>
+                                                                            <th scope="col">CURRENT STOCK</th>
+                                                                            <th scope="col">QUANTITY</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td scope="row"
+                                                                                class="d-flex justify-content-center align-items-center mr-0">
+                                                                                <div class="text-center">
+                                                                                    <img src="assets/img/Group 1119.png"
+                                                                                        alt="Item Image"
+                                                                                        class="img-fluid"
+                                                                                        style="width: 93.46px; height: 71.19px;">
+                                                                                    <p class="mt-2">Scan Items to Add
+                                                                                        them to your Device</p>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="modal-footer justify-content-center">
+                                                                <button type="button" class="btn btn-info"
+                                                                    data-dismiss="modal">Cancel</button>
+                                                                <button type="button"
+                                                                    class="btn btn-warning">Done</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Model end -->
                                             </div>
                                         </div>
                                     </div><br>
@@ -750,10 +816,30 @@
                                             <!-- last column -->
                                             <div class="row">
                                                 <div class="col-md-7 border-end border-secondary">
-                                                    <h6 style="color: #004C8C;font-size: 12px; font-weight: 600;">+ Add
-                                                        Notes</h6>
-                                                    <p style="color: #004C8C;font-size: 12px; font-weight: 600;">Terms
+                                                    <h6 id="add-notes-btn"
+                                                        style="color: #004C8C; font-size: 12px; font-weight: 600; cursor: pointer;">
+                                                        + Add Notes
+                                                    </h6>
+                                                    <!-- ----- -->
+                                                    <div id="notes-input" class="form-group" style="display: none;">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter your notes"
+                                                            style="width: 579px; height: 44px; border-radius: 10px; font-size: 10px;">
+                                                    </div>
+                                                    <!-- ----- -->
+
+                                                    <p class="terms-link"
+                                                        style="color: #004C8C;font-size: 12px; font-weight: 600;">Terms
                                                         and Conditions</p>
+
+                                                    <!-- ------ -->
+                                                    <div id="inputField" class="form-group" style="display: none;">
+                                                        <input type="text" class="form-control" id="exampleInput"
+                                                            placeholder="Enter Terms and Conditions"
+                                                            style="width: 579px; height: 44px; border-radius: 10px; font-size: 10px;">
+                                                    </div>
+                                                    <!-- ------ -->
+
                                                     <hr class="mt-4 mb-4"
                                                         style="border-top: 2px solid rgba(45, 45, 45, 1);">
                                                     <!-- Bank Details Title and Text -->
@@ -947,6 +1033,29 @@
                     addButton.text('+ Add');
                 }
             }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#add-notes-btn").click(function () {
+                $("#notes-input").toggle();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.terms-link').on('click', function () {
+                $('#inputField').toggle();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#purchasePriceHeader').find('i').click(function () {
+                // Remove the text "PURCHASE PRICE"
+                $('#purchasePriceHeader').text('');
+
+            });
         });
     </script>
 </body>
