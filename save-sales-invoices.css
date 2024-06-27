@@ -1039,3 +1039,16 @@ label {
 .hidden {
     display: none;
 }
+
+/* .custom-modal {
+    max-width: 762px;
+    height: 615px;
+}
+
+.custom-modal .modal-content {
+    height: 100%;
+} */
+
+#exampleModalLabel {
+    margin-left: 200px;
+}

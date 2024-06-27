@@ -340,12 +340,17 @@
                                         <div class="col-md-7 border-end border-secondary">
                                             <h6 class="fw-bold mt-0">Bill To</h6>
                                             <hr style="margin-left: -19px;">
+
                                             <div
                                                 style="width: 385px; height: 135px; border: 1px dotted #004C8C; text-align: center; padding-top: 50px;border-radius: 10px;">
                                                 <button type="button" class="btn btn-outline-secondary"
                                                     data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add
                                                     Party</button>
+                                                <!-- <button type="button" class="btn btn-outline-primary mt-n5">Another
+                                                    Button</button> -->
                                             </div>
+
+                                            <!-- data-bs-toggle="modal" data-bs-target="#exampleModal" -->
 
                                             <!-- +Add Party  Modal Start-->
                                             <div class="modal fade" id="exampleModal" tabindex="-1"
@@ -513,7 +518,9 @@
                                                         <th>DISCOUNT</th>
                                                         <th>TAX</th>
                                                         <th>AMOUNT(₹)</th>
-                                                        <th>+</th>
+                                                        <th><i class="bi bi-plus-circle" style="color: #3BB161;"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal"></i>
+                                                        </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -534,6 +541,131 @@
                                                     <!-- Add more rows as needed -->
                                                 </tbody>
                                             </table>
+
+                                            <!-- + icon Modal start-->
+                                            <div class="modal fade" id="myModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content" style="max-width: 762px;height: 615px;">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title d-flex justify-content-center text-center"
+                                                                id="exampleModalLabel">
+                                                                Show/Hide Columns In Invoice
+                                                            </h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <!-- Modal body content -->
+                                                            <table class="table" style="line-height: 2.2;">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col" style="font-size: 14px;">Column
+                                                                            Name</th>
+                                                                        <th scope="col" style="font-size: 14px;">Show
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row"
+                                                                            style="color: rgba(45, 45, 45, 1);">
+                                                                            Price/Item (₹)</th>
+                                                                        <td>
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox" role="switch"
+                                                                                    id="flexSwitchCheckDefault"
+                                                                                    style="width: 37px; height: 19px;"
+                                                                                    onchange="toggleCheckboxes()">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"
+                                                                            style="color: rgba(45, 45, 45, 1);">Quantity
+                                                                        </th>
+                                                                        <td>
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox" role="switch"
+                                                                                    id="flexSwitchCheckDefault"
+                                                                                    style="width: 37px; height: 19px;">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"
+                                                                            style="color: rgba(45, 45, 45, 1);">CUSTOM
+                                                                            COLUMN</th>
+                                                                        <td>
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox" role="switch"
+                                                                                    id="flexSwitchCheckDefault"
+                                                                                    style="width: 37px; height: 19px;">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"
+                                                                            style="color: rgba(45, 45, 45, 1);">Batch
+                                                                            No.</th>
+                                                                        <td>
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox" role="switch"
+                                                                                    id="flexSwitchCheckDefault"
+                                                                                    style="width: 37px; height: 19px;">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"
+                                                                            style="color: rgba(45, 45, 45, 1);">Exp.Date
+                                                                        </th>
+                                                                        <td>
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox" role="switch"
+                                                                                    id="flexSwitchCheckDefault"
+                                                                                    style="width: 37px; height: 19px;">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"
+                                                                            style="color: rgba(45, 45, 45, 1);">Mfg Date
+                                                                        </th>
+                                                                        <td>
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox" role="switch"
+                                                                                    id="flexSwitchCheckDefault"
+                                                                                    style="width: 37px; height: 19px;">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p class="d-flex justify-content-center">To add Custom Item
+                                                                Columns
+                                                                - Go to <span style="color: #3BB161;"> Item
+                                                                    Settings</span> from <span
+                                                                    style="color: #004C8C;">Items page (click
+                                                                    here)</span></p>
+                                                        </div>
+                                                        <div class="modal-footer justify-content-center">
+                                                            <button type="button" class="btn btn-info"
+                                                                data-bs-dismiss="modal">Cancel</button>
+                                                            <button type="button" class="btn btn-warning">Done</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- + icon Modal end -->
+
+
                                             <!-- New Row with col-md-7 and col-md-5 -->
                                             <div class="row mt-4">
                                                 <div class="col-md-7">
@@ -739,6 +871,16 @@
                                                                 </button>
                                                             </div>
                                                             <div class="modal-body">
+                                                                <!-- New buttons added here -->
+                                                                <div class="d-flex justify-content-start mb-3">
+                                                                    <button type="button"
+                                                                        class="btn btn-danger mr-2">Search Party bt name
+                                                                        or number</button>
+                                                                    <button type="button" class="btn btn-danger ml-auto"
+                                                                        style="border-color: #004C8C;color: #004C8C
+                                                                    ;">+Create
+                                                                        New Item</button>
+                                                                </div>
                                                                 <!-- Modal content goes here -->
                                                                 <table class="table">
                                                                     <thead>
