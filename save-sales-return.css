@@ -1020,32 +1020,35 @@ label {
     top: 1rem;
 }
 
+.col-2 {
+    flex: 0 0 auto;
+    width: 37.666667%;
+}
+
 .form-check-input:checked[type=checkbox] {
     --bs-form-check-bg-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e);
     BACKGROUND-COLOR: #3BB161;
 }
 
-.btn-outline-primary {
-    margin-top: -98px;
-}
-
-.btn-outline-primary {
-    --bs-btn-color: black;
-    --bs-btn-border-color: black;
-    --bs-btn-hover-color: black;
-    --bs-btn-hover-bg: #fff;
-    --bs-btn-hover-border-color: black;
-    --bs-btn-focus-shadow-rgb: 13, 110, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #fff;
-    --bs-btn-active-border-color: black;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: black;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: black;
-    --bs-gradient: none;
-}
-
 .form-control {
+    height: 44px;
     font-size: 12px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* .custom-modal {
+    max-width: 762px;
+    height: 615px;
+}
+
+.custom-modal .modal-content {
+    height: 100%;
+} */
+
+#exampleModalLabel {
+    margin-left: 200px;
 }
